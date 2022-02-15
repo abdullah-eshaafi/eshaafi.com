@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant&family=Poppins&display=swap");
+
+.nav-link {
+  color: #1e1e1e;
+  text-decoration: none;
+}
+.hero-main-wrapper {
+  background: linear-gradient(#bee9e7 -17.33%, rgba(0, 155, 147, 0) 75.91%),
+    #ffffff;
+  box-shadow: 0px 4px 16px rgba(75, 0, 129, 0.26);
+}
+
+.navbar_links_wrapper {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #1e1e1e;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+.hero_text_heading {
+  margin-bottom: 40px;
+}
+
+.hero_text_heading > h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 70px;
+  /* identical to box height, or 140% */
+
+  letter-spacing: 0.02em;
+
+  color: #1e1e1e;
+  margin-bottom: 0px;
+}
+.hero_text-para {
+  margin-bottom: 64px;
+}
+.hero_text-para > p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: #1e1e1e;
+  margin-bottom: 0px;
+}
+
+.hero_main_wrapper {
+  margin-top: 136px;
+  margin-bottom: 136px;
+}
+.btn-android {
+  border: none;
+}
+
+.btn-apple {
+  border: none;
+}
+
+.white_dots {
+  margin-left: -55px;
+}
