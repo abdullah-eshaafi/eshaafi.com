@@ -55,7 +55,7 @@
 
 .hero_main_wrapper {
   margin-top: 136px;
-  margin-bottom: 136px;
+  margin-bottom: 186px;
 }
 .btn-android {
   border: none;
@@ -67,4 +67,487 @@
 
 .white_dots {
   margin-left: -55px;
+}
+
+/* 
+========================Section 2 Statred===================== */
+.invert-comma-section-wrapper {
+  margin-top: 120px;
+  margin-bottom: 115px;
+}
+
+.eshaafi_section-para > p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: #260041;
+}
+
+.inverted_comma_text {
+  margin-left: 20px;
+}
+
+.eshaafi-card_img-wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.eshaafi-card-heading > h4 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.02em;
+
+  /* Black */
+
+  color: #1e1e1e;
+}
+.eshaafi-card-heading {
+  margin-left: 16px;
+}
+.eshaafi-card-para {
+  margin-bottom: 49px;
+}
+.eshaafi-card-para-spacing {
+  margin-bottom: 96px;
+}
+.eshaafi-card-para > p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #0f001a;
+
+  opacity: 0.6;
+}
+
+.card-main-wrapper {
+  background: #ffffff;
+  box-shadow: 5px 20px 50px rgba(0, 155, 147, 0.2);
+  border-radius: 10px;
+}
+
+.card-wrapper {
+  margin-top: 67px;
+}
+
+.white_dots_wrapper {
+  margin-left: -75px;
+  position: relative;
+  z-index: -1;
+}
+
+.white_dots_wrapper_ {
+  margin-bottom: -70px;
+  margin-left: -75px;
+  position: relative;
+  z-index: -1;
+}
+.telehealth-heading {
+  margin-top: 55px;
+  margin-bottom: 196px;
+}
+.telehealth-heading > h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 56px;
+  /* or 140% */
+
+  letter-spacing: 0.05em;
+
+  /* Black */
+
+  color: #1e1e1e;
+}
+
+.card-second-wrapper {
+  margin-left: -45px;
+}
+
+.First-card-spacing {
+  margin-bottom: 522px;
+}
+
+.how_it_work_wrapper {
+  background: rgba(0, 155, 147, 0.1);
+  padding-top: 80px;
+}
+
+.how_it_works_text {
+  padding-bottom: 77px;
+}
+
+.how_it_works_text > h4 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #009b93;
+}
+
+.how_it_works_img {
+  margin-bottom: 30px;
+}
+
+.how_it_works-heading > h5 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  /* Black */
+
+  color: #1e1e1e;
+}
+
+.how_it_works-text > p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+
+  text-align: center;
+
+  /* Black */
+
+  color: #1e1e1e;
+}
+
+.three_points_wrapper {
+  padding-bottom: 90px;
+}
+.Doctor_wrapper {
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+.Doctor_wrapper > h6 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 58px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #1e1e1e;
+}
+.Image_wrapper {
+  margin-bottom: 120px;
+}
+.doctor-app-wrapper {
+  margin-bottom: 16px;
+}
+.doctor-app-wrapper > h5 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.02em;
+
+  /* Black */
+
+  color: #1e1e1e;
+}
+.doctor-list-wrapper {
+  padding-left: 0px !important;
+}
+.doctor-list-wrapper > li {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+.img-tik-wrapper {
+  margin-right: 16px;
+}
+
+.Doctor-app-main-wrapper {
+  margin-top: 160px;
+}
+
+.satisfied-wrapper {
+  background: #009b94;
+}
+
+.satisfied-wrapper-heading {
+  margin-top: 258px;
+}
+
+.satisfied-wrapper-heading > h4 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  /* identical to box height, or 118% */
+
+  letter-spacing: 0.25px;
+
+  color: #ffffff;
+}
+.satisfied-wrapper-text {
+  margin-top: 8px;
+  margin-bottom: 150px;
+}
+
+.satisfied-wrapper-text > h4 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  letter-spacing: 0.5px;
+
+  color: #ffffff;
+}
+
+.reviwes-wrapper {
+  background: #e0f3f2;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.reviews-card-wrapper {
+  background: #ffffff;
+  box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);
+}
+
+.reviwes-inverted-img {
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 24px;
+}
+
+.review-heading-wrapper > h4 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+
+  letter-spacing: 0.5px;
+
+  /* Black */
+
+  color: #1e1e1e;
+  margin-bottom: 0px;
+}
+
+.reviews-starts {
+  margin-top: -8px;
+}
+.review-lady-img {
+  padding-left: 40px;
+}
+
+.review-lady-img {
+  margin-right: 16px;
+  margin-top: -4px;
+}
+
+.stars-img-text-wrapper {
+  padding-bottom: 24px;
+}
+
+.reviews-para-wrapper > p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  letter-spacing: 0.5px;
+
+  /* Black */
+
+  color: #1e1e1e;
+}
+
+.reviews-para-wrapper {
+  margin-left: 40px;
+  padding-bottom: 156px;
+}
+
+.vision-text-first > p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+  /* or 180% */
+
+  /* Black */
+
+  color: #1e1e1e;
+}
+
+.vision-video {
+  margin-top: 120px;
+  margin-bottom: 24px;
+}
+
+.vision-last-spacing {
+  margin-bottom: 120px;
+}
+
+.Get-eShaafi-App {
+  background: #e0f3f2;
+}
+
+.Get-eShaafi-App-wrapper {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.Get-eShaafi-App-heading {
+  margin-bottom: 16px;
+}
+
+.Get-eShaafi-App-heading > h4 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  /* identical to box height, or 118% */
+
+  letter-spacing: 0.25px;
+
+  color: #1e1e1e;
+  margin-bottom: 0px;
+}
+
+.Get-eShaafi-App-para {
+  margin-bottom: 52px;
+}
+
+.Get-eShaafi-App-para > p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  letter-spacing: 0.5px;
+
+  /* Black */
+
+  color: #1e1e1e;
+  margin-bottom: 0px;
+}
+.Get-eShaafi-App-download {
+  margin-bottom: 4px;
+}
+.Get-eShaafi-App-download > h5 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+
+  color: #1e1e1e;
+  margin-bottom: 0px;
+}
+.Get-eShaafi-App-input > input {
+  width: 70%;
+  height: 48px;
+  outline: none;
+  border: none;
+  background: #ffffff;
+  border-radius: 4px;
+  padding-left: 8px;
+}
+
+.Get-eShaafi-App-input > input::placeholder {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+
+  letter-spacing: 0.5px;
+
+  color: #5c5c5c;
+}
+.Get-eShaafi-App-input > button {
+  width: 30%;
+  height: 48px;
+  outline: none;
+  border: none;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 1.25px;
+
+  color: #ffffff;
+  background: #009b94;
+  border-radius: 4px;
+}
+
+.Get-eShaafi-App-input {
+  margin-bottom: 40px;
+}
+/* .Get-eShaafi-App-btn {
+  margin-bottom: 64px;
+} */
+
+.Get-eShaafi-App-second-image {
+  margin-top: 100px;
+}
+
+.footer-main-wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer-phone > p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #1e1e1e;
+}
+.footer-images {
+  margin-right: 20px;
+  margin-top: -4px;
+}
+
+.Footer {
+  border-bottom: 1px solid #e5e5e5;
+
+  margin-bottom: 25px;
+}
+
+.youtube_links {
+  margin-top: 20px;
 }
