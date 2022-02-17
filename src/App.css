@@ -554,8 +554,8 @@
 
 @media only screen and (max-width: 1200px) and (min-width: 992px) {
   .hero_main_wrapper {
-    margin-top: 60px;
-    margin-bottom: 100px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
   .white_dots {
     display: none;
@@ -605,8 +605,8 @@
 
 @media only screen and (max-width: 992px) and (min-width: 768px) {
   .hero_main_wrapper {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
   .white_dots {
     display: none;
@@ -667,8 +667,8 @@
     margin-bottom: 60px;
   }
   .hero_main_wrapper {
-    margin-top: 80px;
-    margin-bottom: 100px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
   .white_dots_wrapper {
     display: none;
@@ -735,22 +735,22 @@
     margin-bottom: 0px;
   }
   .hero_main_wrapper {
-    margin-top: 80px;
-    margin-bottom: 100px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
   .white_dots {
     display: none;
   }
   .app-img-wrapper {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
   .inverted_comma_text {
     margin-left: 0px;
   }
 
   .invert-comma-section-wrapper {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
   .inverted_comma_wrapper {
     margin-bottom: 16px;
@@ -767,11 +767,11 @@
   }
 
   .telehealth-heading {
-    margin-top: 30px;
-    margin-bottom: 100px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
   .First-card-spacing {
-    margin-bottom: 40px;
+    margin-bottom: 16px;
   }
 
   .white_dots_wrapper_ {
@@ -779,7 +779,8 @@
   }
 
   .card-wrapper {
-    margin-bottom: 67px;
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
   .Image_wrapper {
     margin-bottom: 80px;
@@ -798,5 +799,35 @@
   .apple-world {
     width: 80%;
     height: 80%;
+  }
+  .footer-image-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-main-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .satisfied-wrapper-text > h4 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .hero_text_heading {
+    margin-bottom: 16px;
+  }
+  .hero_text-para {
+    margin-bottom: 16px;
+  }
+  .how_it_work_wrapper {
+    margin-top: 80px;
+  }
+  .Doctor_wrapper {
+    margin-top: 80px;
+  }
+  .satisfied-wrapper-heading {
+    margin-top: 80px;
+  }
+  .satisfied-wrapper-text {
+    margin-bottom: 80px;
   }
 }

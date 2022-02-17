@@ -525,18 +525,18 @@ function App() {
       </div>
       <Container>
         <Row className="Footer">
-          <Col>
+          <Col md={6}>
             <div className="footer-main-wrapper">
-              <div>
+              <div className="footer-image-wrapper">
                 <img src={final_logo} alt="..."></img>
               </div>
             </div>
           </Col>
-          <Col>
+          <Col md={6}>
             <div className="footer-main-wrapper">
               <div
-                className="col-lg-8 d-flex
-              justify-content-between"
+                className="col-lg-8 col-12 d-lg-flex
+              justify-content-between d-block"
               >
                 <div className="d-flex">
                   <div className="footer-images">
