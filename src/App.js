@@ -57,62 +57,72 @@ function App() {
   return (
     <div style={{ overflow: "hidden" }}>
       <div className="hero-main-wrapper">
-        <Navbar bg="transparent">
+        <Navbar bg="transparent" expand="xl">
           <Container>
             <Navbar.Brand to="/">
               <img src={eshaafi} alt="..."></img>
             </Navbar.Brand>
-            <Nav>
-              {SidebarData.map((data, index) => (
-                <NavLink
-                  to="#home"
-                  className="navbar_links_wrapper"
-                  onClick={(e) => handleChangeColor(index, e)}
-                  style={{
-                    color: selIndex === index ? "#009B93" : "#1e1e1e",
-                  }}
-                  key={index}
-                >
-                  {data.title}
-                </NavLink>
-              ))}
-            </Nav>
+            <Navbar.Toggle aria-controls="navbarScroll" />
+            <Navbar.Collapse id="navbarScroll">
+              <Nav className="ms-auto my-2 my-lg-0" navbarScroll>
+                {SidebarData.map((data, index) => (
+                  <NavLink
+                    to="#home"
+                    className="navbar_links_wrapper"
+                    onClick={(e) => handleChangeColor(index, e)}
+                    style={{
+                      color: selIndex === index ? "#009B93" : "#1e1e1e",
+                    }}
+                    key={index}
+                  >
+                    {data.title}
+                  </NavLink>
+                ))}
+              </Nav>
+            </Navbar.Collapse>
           </Container>
         </Navbar>
         <Container>
           <Row>
-            <Col lg={6}>
+            <Col xl={6}>
               <div className="hero_main_wrapper">
-                <div className="hero_text_heading">
+                <div className="hero_text_heading d-lg-flex justify-content-lg-center justify-content-xl-start d-block">
                   <h3>Care that never quits</h3>
                 </div>
-                <div className="hero_text-para">
-                  <p>
-                    Revolutionising healthcare by connecting you with the best
-                    practitioners across Pakistan, addressing all your
-                    health-related matters
-                  </p>
+                <div className="d-lg-flex justify-content-center d-block">
+                  <div className="hero_text-para col-lg-7 col-xl-12 col-12">
+                    <p>
+                      Revolutionising healthcare by connecting you with the best
+                      practitioners across Pakistan, addressing all your
+                      health-related matters
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <div className="col-lg-6 d-flex justify-content-between">
-                    <div className="col-lg-8">
+
+                <div
+                  // style={{ background: "red" }}
+                  className="d-lg-flex justify-content-lg-center
+                justify-content-xl-center d-xl-block"
+                >
+                  <div className="col-xl-6 col-lg-6 col-md-7 col-12 d-flex justify-content-between">
+                    <div className="col-xl-8 col-lg-6">
                       <button className="btn-android">
-                        <img src={andriod} alt="..."></img>
+                        <img src={andriod} alt="..." className="res-img"></img>
                       </button>
                     </div>
-                    <div>
+                    <div className="col-xl-8 col-lg-6  d-xl-block d-lg-flex justify-content-lg-end">
                       <button className="btn-apple">
-                        <img src={apple} alt="..."></img>
+                        <img src={apple} alt="..." className="res-img"></img>
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
             </Col>
-            <Col lg={6}>
+            <Col xl={6}>
               <div>
                 <div className="d-flex justify-content-center align-items-center">
-                  <div>
+                  <div className="app-img-wrapper">
                     <img src={app} alt="..."></img>
                   </div>
                   <div className="white_dots">
@@ -233,7 +243,7 @@ function App() {
                     </div>
                   </div>
                 </div>
-                <div className="white_dots_wrapper_ d-flex align-items-end">
+                <div className="white_dots_wrapper_ d-xl-flex align-items-xl-end">
                   <img src={white_dots} alt="..."></img>
                 </div>
               </div>
@@ -250,7 +260,7 @@ function App() {
               </div>
             </div>
             <Container>
-              <div className="col-lg-12 d-flex three_points_wrapper">
+              <div className="col-lg-12 d-lg-flex d-block three_points_wrapper">
                 <div className="col-lg-4 d-flex justify-content-center">
                   <div className="col-lg-12 text-center">
                     <div className="how_it_works_img text-center">
@@ -316,12 +326,12 @@ function App() {
       </Container>
       <Container>
         <Row>
-          <Col>
-            <div className="Image_wrapper">
+          <Col xl={6}>
+            <div className="Image_wrapper d-flex justify-content-xl-start justify-content-center">
               <img src={doctor} alt="..."></img>
             </div>
           </Col>
-          <Col>
+          <Col xl={6}>
             <div className="d-flex justify-content-center Doctor-app-main-wrapper">
               <div>
                 <div className="doctor-app-wrapper">
@@ -377,7 +387,7 @@ function App() {
         </Row>
       </Container>
       <Row>
-        <Col lg={6} className="satisfied-wrapper">
+        <Col xl={6} className="satisfied-wrapper">
           <div className="d-flex justify-content-center col-lg-12">
             <div className="satisfied-wrapper-heading col-lg-5">
               <h4>Satisfied Patients</h4>
@@ -392,8 +402,8 @@ function App() {
             </div>
           </div>
         </Col>
-        <Col lg={6} className="reviwes-wrapper px-0">
-          <div className="col-lg-9 reviews-card-wrapper">
+        <Col xl={6} className="reviwes-wrapper px-0">
+          <div className="col-lg-9 col-12 reviews-card-wrapper">
             <div className="d-flex justify-content-end reviwes-inverted-img">
               <img src={inverted} alt=".."></img>
             </div>
@@ -484,18 +494,22 @@ function App() {
                 <div className="col-lg-6 d-flex justify-content-between Get-eShaafi-App-btn">
                   <div className="col-lg-8">
                     <button className="btn-android">
-                      <img src={andriod} alt="..."></img>
+                      <img
+                        src={andriod}
+                        alt="..."
+                        className="apple-world"
+                      ></img>
                     </button>
                   </div>
                   <div>
                     <button className="btn-apple">
-                      <img src={apple} alt="..."></img>
+                      <img src={apple} alt="..." className="apple-world"></img>
                     </button>
                   </div>
                 </div>
               </div>
             </Col>
-            <Col>
+            <Col className="images-wrapper">
               <div className="d-flex">
                 {" "}
                 <div>

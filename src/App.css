@@ -551,3 +551,252 @@
 .youtube_links {
   margin-top: 20px;
 }
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+  .hero_main_wrapper {
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+  .white_dots {
+    display: none;
+  }
+  .app-img-wrapper {
+    margin-bottom: 100px;
+  }
+  .white_dots_wrapper {
+    display: none;
+  }
+  .card-second-wrapper {
+    margin-left: 0px;
+  }
+
+  .eshaafi-card-para > p {
+    padding: 16px;
+  }
+  .invert-comma-section-wrapper {
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+  .telehealth-heading {
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+  .First-card-spacing {
+    margin-bottom: 40px;
+  }
+  .white_dots_wrapper_ {
+    display: none !important;
+  }
+  .card-wrapper {
+    margin-bottom: 67px;
+  }
+
+  .Image_wrapper {
+    margin-bottom: 80px;
+  }
+  .Doctor-app-main-wrapper {
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+  .reviews-para-wrapper > p {
+    padding-right: 24px;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .hero_main_wrapper {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .white_dots {
+    display: none;
+  }
+  .app-img-wrapper {
+    margin-bottom: 60px;
+  }
+  .white_dots_wrapper {
+    display: none;
+  }
+
+  .eshaafi-card-para > p {
+    padding: 16px;
+  }
+
+  .card-second-wrapper {
+    margin-left: 0px;
+  }
+  .invert-comma-section-wrapper {
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+
+  .telehealth-heading {
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+  .First-card-spacing {
+    margin-bottom: 40px;
+  }
+
+  .white_dots_wrapper_ {
+    display: none !important;
+  }
+
+  .card-wrapper {
+    margin-bottom: 67px;
+  }
+
+  .Image_wrapper {
+    margin-bottom: 80px;
+  }
+  .Doctor-app-main-wrapper {
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+
+  .reviews-para-wrapper > p {
+    padding-right: 24px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 568px) {
+  .white_dots {
+    display: none;
+  }
+  .app-img-wrapper {
+    margin-bottom: 60px;
+  }
+  .hero_main_wrapper {
+    margin-top: 80px;
+    margin-bottom: 100px;
+  }
+  .white_dots_wrapper {
+    display: none;
+  }
+
+  .card-second-wrapper {
+    margin-left: 0px;
+  }
+
+  .eshaafi-card-para > p {
+    padding: 16px;
+  }
+  .invert-comma-section-wrapper {
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+
+  .telehealth-heading {
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+  .First-card-spacing {
+    margin-bottom: 40px;
+  }
+
+  .white_dots_wrapper_ {
+    display: none !important;
+  }
+
+  .card-wrapper {
+    margin-bottom: 67px;
+  }
+  .Image_wrapper {
+    margin-bottom: 80px;
+  }
+  .Doctor-app-main-wrapper {
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+
+  .reviews-para-wrapper > p {
+    padding-right: 24px;
+  }
+}
+@media only screen and (max-width: 568px) and (min-width: 270px) {
+  .res-img {
+    width: 80%;
+    height: 80%;
+  }
+  .btn-android {
+    background-color: transparent;
+  }
+  .btn-apple {
+    background-color: transparent;
+  }
+  .hero_text_heading > h3 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    color: #1e1e1e;
+    margin-bottom: 0px;
+  }
+  .hero_main_wrapper {
+    margin-top: 80px;
+    margin-bottom: 100px;
+  }
+  .white_dots {
+    display: none;
+  }
+  .app-img-wrapper {
+    margin-bottom: 60px;
+  }
+  .inverted_comma_text {
+    margin-left: 0px;
+  }
+
+  .invert-comma-section-wrapper {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .inverted_comma_wrapper {
+    margin-bottom: 16px;
+  }
+  .white_dots_wrapper {
+    display: none;
+  }
+
+  .card-second-wrapper {
+    margin-left: 0px;
+  }
+  .eshaafi-card-para > p {
+    padding: 16px;
+  }
+
+  .telehealth-heading {
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+  .First-card-spacing {
+    margin-bottom: 40px;
+  }
+
+  .white_dots_wrapper_ {
+    display: none !important;
+  }
+
+  .card-wrapper {
+    margin-bottom: 67px;
+  }
+  .Image_wrapper {
+    margin-bottom: 80px;
+  }
+  .Doctor-app-main-wrapper {
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+
+  .reviews-para-wrapper > p {
+    padding-right: 24px;
+  }
+  .images-wrapper {
+    display: none;
+  }
+  .apple-world {
+    width: 80%;
+    height: 80%;
+  }
+}
