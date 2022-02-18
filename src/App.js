@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./App.css";
 import eshaafi from "./Images/eShaafi.svg";
 import { Container, Row, Col, Navbar, Nav, NavLink } from "react-bootstrap";
@@ -54,20 +54,25 @@ function App() {
   const handleChangeColor = (index, e) => {
     setSelectIndex(index);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div style={{ overflow: "hidden" }}>
-      <div className="hero-main-wrapper">
-        <Navbar bg="transparent" expand="xl">
+      <div className="hero-main-wrapper" id="home">
+        <Navbar bg="white  fixed-top" expand="xl" className="Navabr_position">
           <Container>
             <Navbar.Brand to="/">
               <img src={eshaafi} alt="..."></img>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
-              <Nav className="ms-auto my-2 my-lg-0" navbarScroll>
+              <Nav className="ms-auto my-2 my-lg-0 " navbarScroll>
                 {SidebarData.map((data, index) => (
                   <NavLink
-                    to="#home"
+                    href={data.path}
                     className="navbar_links_wrapper"
                     onClick={(e) => handleChangeColor(index, e)}
                     style={{
@@ -82,6 +87,7 @@ function App() {
             </Navbar.Collapse>
           </Container>
         </Navbar>
+        <div className="Fixed-Nav-Fix">1</div>
         <Container>
           <Row>
             <Col xl={6}>
@@ -134,8 +140,8 @@ function App() {
           </Row>
         </Container>
       </div>
-
-      <Container>
+      <div className="Fixed-Nav-Fix">1</div>
+      <Container id="why">
         <Row>
           <Col lg={12}>
             <div className="invert-comma-section-wrapper">
@@ -251,7 +257,8 @@ function App() {
           </Col>
         </Row>
       </Container>
-      <Row>
+      <Row id="works">
+        <div className="Fixed-Nav-Fix">1</div>
         <Col>
           <div className="how_it_work_wrapper">
             <div className="col-lg-12">
@@ -262,7 +269,7 @@ function App() {
             <Container>
               <div className="col-lg-12 d-lg-flex d-block three_points_wrapper">
                 <div className="col-lg-4 d-flex justify-content-center">
-                  <div className="col-lg-12 text-center">
+                  <div className="col-lg-12 text-center margin_bootom_wrapper">
                     <div className="how_it_works_img text-center">
                       <img src={icon1} alt="...."></img>
                     </div>
@@ -277,7 +284,7 @@ function App() {
                   </div>
                 </div>
                 <div className="col-lg-4 d-flex justify-content-center">
-                  <div className="col-lg-12 text-center">
+                  <div className="col-lg-12 text-center margin_bootom_wrapper">
                     <div className="how_it_works_img text-center">
                       <img src={icon2} alt="...."></img>
                     </div>
@@ -294,7 +301,7 @@ function App() {
                   </div>
                 </div>
                 <div className="col-lg-4 d-flex justify-content-center">
-                  <div className="col-lg-12 text-center">
+                  <div className="col-lg-12 text-center margin_bootom_wrapper">
                     <div className="how_it_works_img text-center">
                       <img src={icon3} alt="...."></img>
                     </div>
@@ -315,7 +322,7 @@ function App() {
           </div>
         </Col>
       </Row>
-      <Container>
+      <Container id="Doctor">
         <Row>
           <Col>
             <div className="Doctor_wrapper">
@@ -385,16 +392,17 @@ function App() {
             </div>
           </Col>
         </Row>
-      </Container>
-      <Row>
+      </Container>{" "}
+      <Row id="about">
+        <div className="Fixed-Nav-Fix">1</div>
         <Col xl={6} className="satisfied-wrapper">
           <div className="d-flex justify-content-center col-lg-12">
             <div className="satisfied-wrapper-heading col-lg-5">
               <h4>Satisfied Patients</h4>
             </div>
           </div>
-          <div className="d-flex justify-content-center col-lg-12">
-            <div className="satisfied-wrapper-text col-lg-5">
+          <div className="d-flex justify-content-center  col-lg-12">
+            <div className="satisfied-wrapper-text col-10 col-lg-5">
               <h4>
                 Feedback from these satisfied users helps us in reaching new
                 heights
@@ -470,7 +478,8 @@ function App() {
       </Container>
       <div className="Get-eShaafi-App">
         {" "}
-        <Container>
+        <Container id="app">
+          <div className="Fixed-Nav-Fix">1</div>
           <Row>
             <Col>
               <div className="Get-eShaafi-App-wrapper">
@@ -566,18 +575,35 @@ function App() {
                   </p>
                 </div>
               </div>
-              <div className="d-flex justify-content-between col-lg-4 youtube_links">
+              <div className="d-flex justify-content-md-between justify-content-around col-lg-4 youtube_links">
                 <div>
-                  <img src={fb} alt="..."></img>{" "}
+                  <a
+                    href="https://www.facebook.com/eShaaficare/?ref=pages_you_manage&_rdc=1&_rdr"
+                    target="_blank"
+                  >
+                    <img src={fb} alt="..."></img>
+                  </a>{" "}
                 </div>
                 <div>
-                  <img src={twitter} alt="..."></img>{" "}
+                  <a href="https://twitter.com/eshaafi_com" target="_blank">
+                    <img src={twitter} alt="..."></img>
+                  </a>{" "}
                 </div>
                 <div>
-                  <img src={linkdin} alt="..."></img>{" "}
+                  <a
+                    href="https://www.linkedin.com/company/31094337/admin/?feedView=all"
+                    target="_blank"
+                  >
+                    <img src={linkdin} alt="..."></img>
+                  </a>{" "}
                 </div>
                 <div>
-                  <img src={yt} alt="..."></img>{" "}
+                  <a
+                    href="https://www.instagram.com/eshaaficare/"
+                    target="_blank"
+                  >
+                    <img src={yt} alt="..."></img>
+                  </a>
                 </div>
               </div>
             </div>

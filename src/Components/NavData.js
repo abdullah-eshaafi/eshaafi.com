@@ -3,33 +3,33 @@ export const SidebarData = [
     id: 1,
 
     title: "Home",
-    path: "/PatientDashboard",
+    path: "#home",
   },
   {
     id: 2,
     title: "Why Us?",
-    path: "/Appointments",
+    path: "#why",
   },
   {
     id: 3,
     title: "How It Works?",
-    path: "/MyDoctors",
+    path: "#works",
   },
 
   {
     id: 4,
     title: "For Doctors",
-    path: "/MedicalHistory",
+    path: "#Doctor",
   },
   {
     id: 4,
     title: "About",
-    path: "/wallet",
+    path: "#about",
   },
 
   {
     id: 5,
     title: "Get App",
-    path: "/Notifications",
+    path: "#app",
   },
 ];
