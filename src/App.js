@@ -61,11 +61,14 @@ function App() {
 
   return (
     <div style={{ overflow: "hidden" }}>
-      <div className="hero-main-wrapper" id="home">
-        <Navbar bg="transparent" expand="xl" className="Navabr_position">
+      <div id="home">1</div>
+      <div className="hero-main-wrapper">
+        <Navbar bg="white fixed-top" expand="xl">
           <Container>
             <Navbar.Brand to="/">
-              <img src={eshaafi} alt="..."></img>
+              <a href="#home">
+                <img src={eshaafi} alt="..."></img>
+              </a>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
@@ -140,7 +143,8 @@ function App() {
           </Row>
         </Container>
       </div>
-      <Container id="why">
+      <div id="why"></div>
+      <Container>
         <Row>
           <Col lg={12}>
             <div className="invert-comma-section-wrapper">
@@ -256,7 +260,8 @@ function App() {
           </Col>
         </Row>
       </Container>
-      <Row id="works">
+      <div id="works">1</div>
+      <Row>
         <Col>
           <div className="how_it_work_wrapper">
             <div className="col-lg-12">
@@ -391,7 +396,8 @@ function App() {
           </Col>
         </Row>
       </Container>{" "}
-      <Row id="about">
+      <div id="about"></div>
+      <Row>
         <Col xl={6} className="satisfied-wrapper">
           <div className="d-flex justify-content-center col-lg-12">
             <div className="satisfied-wrapper-heading col-lg-5">
@@ -473,9 +479,10 @@ function App() {
           </Col>
         </Row>
       </Container>
+      <div id="app"></div>
       <div className="Get-eShaafi-App">
         {" "}
-        <Container id="app">
+        <Container>
           <Row>
             <Col>
               <div className="Get-eShaafi-App-wrapper">
