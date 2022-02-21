@@ -343,7 +343,7 @@ function App() {
           </Col>
           <Col xl={6}>
             <div className="d-flex justify-content-center Doctor-app-main-wrapper">
-              <div>
+              <div className="d-cotor-app-container">
                 <div className="doctor-app-wrapper">
                   <h5>With Our Doctor App</h5>
                 </div>

@@ -771,6 +771,8 @@
   .hero_main_wrapper {
     margin-top: 40px;
     margin-bottom: 40px;
+    margin-left: 12px;
+    margin-right: 12px;
   }
   .white_dots {
     display: none;
@@ -785,6 +787,8 @@
   .invert-comma-section-wrapper {
     margin-top: 40px;
     margin-bottom: 40px;
+    margin-left: 12px;
+    margin-right: 12px;
   }
   .inverted_comma_wrapper {
     margin-bottom: 16px;
@@ -794,7 +798,8 @@
   }
 
   .card-second-wrapper {
-    margin-left: 0px;
+    margin-left: 12px;
+    margin-right: 12px;
   }
   .eshaafi-card-para > p {
     padding: 16px;
@@ -803,6 +808,8 @@
   .telehealth-heading {
     margin-top: 40px;
     margin-bottom: 40px;
+    margin-left: 12px;
+    margin-right: 12px;
   }
   .First-card-spacing {
     margin-bottom: 16px;
@@ -815,6 +822,8 @@
   .card-wrapper {
     margin-top: 16px;
     margin-bottom: 16px;
+    margin-left: 12px;
+    margin-right: 12px;
   }
   .Image_wrapper {
     margin-bottom: 80px;
@@ -825,7 +834,7 @@
   }
 
   .reviews-para-wrapper > p {
-    padding-right: 24px;
+    padding-right: 32px;
   }
   .images-wrapper {
     display: none;
@@ -877,5 +886,39 @@
   }
   .doctor-list-wrapper > li {
     margin-bottom: 16px;
+  }
+  #works {
+    height: 1px;
+  }
+  .d-cotor-app-container {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .satisfied-wrapper-heading > h4 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+
+    color: #ffffff;
+  }
+
+  .vision-video {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .vision-text-first {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .Get-eShaafi-App-wrapper {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .footer-main-wrapper {
+    margin-left: 12px;
+    margin-right: 12px;
   }
 }
