@@ -62,7 +62,7 @@ function App() {
   return (
     <div style={{ overflow: "hidden" }}>
       <div className="hero-main-wrapper" id="home">
-        <Navbar bg="white  fixed-top" expand="xl" className="Navabr_position">
+        <Navbar bg="transparent" expand="xl" className="Navabr_position">
           <Container>
             <Navbar.Brand to="/">
               <img src={eshaafi} alt="..."></img>
@@ -87,7 +87,7 @@ function App() {
             </Navbar.Collapse>
           </Container>
         </Navbar>
-        <div className="Fixed-Nav-Fix">1</div>
+
         <Container>
           <Row>
             <Col xl={6}>
@@ -140,7 +140,6 @@ function App() {
           </Row>
         </Container>
       </div>
-      <div className="Fixed-Nav-Fix">1</div>
       <Container id="why">
         <Row>
           <Col lg={12}>
@@ -258,7 +257,6 @@ function App() {
         </Row>
       </Container>
       <Row id="works">
-        <div className="Fixed-Nav-Fix">1</div>
         <Col>
           <div className="how_it_work_wrapper">
             <div className="col-lg-12">
@@ -394,7 +392,6 @@ function App() {
         </Row>
       </Container>{" "}
       <Row id="about">
-        <div className="Fixed-Nav-Fix">1</div>
         <Col xl={6} className="satisfied-wrapper">
           <div className="d-flex justify-content-center col-lg-12">
             <div className="satisfied-wrapper-heading col-lg-5">
@@ -479,7 +476,6 @@ function App() {
       <div className="Get-eShaafi-App">
         {" "}
         <Container id="app">
-          <div className="Fixed-Nav-Fix">1</div>
           <Row>
             <Col>
               <div className="Get-eShaafi-App-wrapper">
