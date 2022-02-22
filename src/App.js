@@ -74,7 +74,7 @@ function App() {
             <Navbar.Collapse id="navbarScroll">
               <Nav className="ms-auto my-2 my-lg-0 " navbarScroll>
                 {SidebarData.map((data, index) => (
-                  <NavLink
+                  <a
                     href={data.path}
                     className="navbar_links_wrapper"
                     onClick={(e) => handleChangeColor(index, e)}
@@ -84,7 +84,7 @@ function App() {
                     key={index}
                   >
                     {data.title}
-                  </NavLink>
+                  </a>
                 ))}
               </Nav>
             </Navbar.Collapse>
