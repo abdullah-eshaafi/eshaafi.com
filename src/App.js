@@ -59,6 +59,11 @@ function App() {
     window.scrollTo(0, 0);
   });
 
+
+  // style={{
+  //   color: selIndex === index ? "#009B93" : "#1e1e1e",
+  // }}
+
   return (
     <div style={{ overflow: "hidden" }}>
       <div id="home">1</div>
@@ -76,9 +81,6 @@ function App() {
                 {SidebarData.map((data, index) => (
                   <span
                     onClick={(e) => handleChangeColor(index, e)}
-                    style={{
-                      color: selIndex === index ? "#009B93" : "#1e1e1e",
-                    }}
                     key={index}
                   >
                     <a href={data.path} className="navbar_links_wrapper">
