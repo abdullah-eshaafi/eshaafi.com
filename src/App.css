@@ -31,7 +31,7 @@
   opacity: 0;
 }
 #works {
-  height: 100px;
+  height: 150px;
   opacity: 0;
 }
 #home {
@@ -141,7 +141,7 @@
   color: #1e1e1e;
 }
 .eshaafi-card-heading {
-  margin-left: 16px;
+  margin-left: 32px;
 }
 .eshaafi-card-para {
   margin-bottom: 49px;
@@ -207,7 +207,7 @@
 }
 
 .First-card-spacing {
-  margin-bottom: 522px;
+  margin-bottom: 150px;
 }
 
 .how_it_work_wrapper {
@@ -888,7 +888,7 @@
     margin-bottom: 16px;
   }
   #works {
-    height: 1px;
+    height: 100px;
   }
   .d-cotor-app-container {
     margin-left: 12px;
@@ -920,5 +920,8 @@
   .footer-main-wrapper {
     margin-left: 12px;
     margin-right: 12px;
+  }
+  .eshaafi-card-heading {
+    margin-left: 16px;
   }
 }

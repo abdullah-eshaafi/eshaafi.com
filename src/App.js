@@ -181,7 +181,7 @@ function App() {
                   <div className="d-flex justify-content-center eshaafi-card_img-wrapper">
                     <img src={patient_img2} alt="..."></img>
                   </div>
-                  <div className="col-lg-8 d-flex justify-content-center">
+                  <div className="col-lg-7 d-flex">
                     <div className="eshaafi-card-heading">
                       <h4>24/7 Consultation</h4>
                     </div>
@@ -206,7 +206,7 @@ function App() {
                   <div className="d-flex justify-content-center eshaafi-card_img-wrapper">
                     <img src={patient_img} alt="..."></img>
                   </div>
-                  <div className="col-lg-8 d-flex justify-content-center">
+                  <div className="col-lg-7 d-flex">
                     <div className="eshaafi-card-heading">
                       <h4>Remote Healthcare</h4>
                     </div>
@@ -235,19 +235,17 @@ function App() {
                   <div className="d-flex justify-content-center eshaafi-card_img-wrapper">
                     <img src={patient_img} alt="..."></img>
                   </div>
-                  <div className="col-lg-8 d-flex justify-content-center">
+                  <div className="col-lg-7 d-flex ">
                     <div className="eshaafi-card-heading">
-                      <h4>Remote Healthcare</h4>
+                      <h4>Digital Records</h4>
                     </div>
                   </div>
                   <div className="col-lg-12 d-flex justify-content-center">
                     <div className="eshaafi-card-para col-lg-10">
                       <p>
-                        Telehealth is becoming the virtual hospital every
-                        patient wants to visit. One doesn’t need to go through
-                        the same hassle of visitng a clinic or a hospital
-                        physically, thus making healthcare a convenient
-                        experience
+                        eShaafi app allow you to save your medical records
+                        online so you don’t have to carry those every time you
+                        consult a doctor.
                       </p>
                     </div>
                   </div>
@@ -292,7 +290,7 @@ function App() {
                       <img src={icon2} alt="...."></img>
                     </div>
                     <div className="how_it_works-heading text-center">
-                      <h5>Book Appointment</h5>
+                      <h5>Book appointment</h5>
                     </div>
                     <div className="col-lg-12 d-flex justify-content-center">
                       <div className="how_it_works-text  text-center col-lg-6">
@@ -540,7 +538,9 @@ function App() {
           <Col md={6}>
             <div className="footer-main-wrapper">
               <div className="footer-image-wrapper">
-                <img src={final_logo} alt="..."></img>
+                <a href="#home">
+                  <img src={final_logo} alt="..."></img>
+                </a>
               </div>
             </div>
           </Col>
@@ -602,7 +602,7 @@ function App() {
                 </div>
                 <div>
                   <a
-                    href="https://www.instagram.com/eshaaficare/"
+                    href="https://www.youtube.com/channel/UCdWmvFCT1nU5sir48rBFGDw/featured"
                     target="_blank"
                   >
                     <img src={yt} alt="..."></img>
