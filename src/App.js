@@ -59,7 +59,6 @@ function App() {
     window.scrollTo(0, 0);
   });
 
-
   // style={{
   //   color: selIndex === index ? "#009B93" : "#1e1e1e",
   // }}
@@ -78,7 +77,9 @@ function App() {
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
               <Nav className="ms-auto my-2 my-lg-0 " navbarScroll>
-                {SidebarData.map((data, index) => (
+                <a href="#home">Home</a>
+                <a href="#why">Why Us?</a>
+                {/* {SidebarData.map((data, index) => (
                   <span
                     onClick={(e) => handleChangeColor(index, e)}
                     key={index}
@@ -87,7 +88,7 @@ function App() {
                       {data.title}
                     </a>
                   </span>
-                ))}
+                ))} */}
               </Nav>
             </Navbar.Collapse>
           </Container>
