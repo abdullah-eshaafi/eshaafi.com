@@ -74,17 +74,17 @@ function App() {
             <Navbar.Collapse id="navbarScroll">
               <Nav className="ms-auto my-2 my-lg-0 " navbarScroll>
                 {SidebarData.map((data, index) => (
-                  <a
-                    href={data.path}
-                    className="navbar_links_wrapper"
+                  <span
                     onClick={(e) => handleChangeColor(index, e)}
                     style={{
                       color: selIndex === index ? "#009B93" : "#1e1e1e",
                     }}
                     key={index}
                   >
-                    {data.title}
-                  </a>
+                    <a href={data.path} className="navbar_links_wrapper">
+                      {data.title}
+                    </a>
+                  </span>
                 ))}
               </Nav>
             </Navbar.Collapse>
