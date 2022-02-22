@@ -46,7 +46,7 @@ import fb from "./Images/fb.png";
 import twitter from "./Images/twitter.png";
 
 import yt from "./Images/yt.png";
-
+import { Link } from "react-router-dom";
 import linkdin from "./Images/linkdin.png";
 function App() {
   const [selIndex, setSelectIndex] = useState(0);
