@@ -566,7 +566,7 @@ function App() {
                     <img src={message} alt=""></img>
                   </div>
                   <div className="footer-phone">
-                    <p>hr@eshaafi.com</p>
+                    <p>contact@eshaafi.com</p>
                   </div>
                 </div>
               </div>
