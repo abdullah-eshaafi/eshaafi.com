@@ -1,5 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant&family=Poppins&display=swap");
 
+.nav-links-warpeer > a {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  /* Black */
+
+  color: #1e1e1e;
+  text-decoration: none;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.nav-links-warpeer > a:hover {
+  color: #009b93;
+}
+
 .Fixed-Nav-Fix {
   padding-top: 100px;
   opacity: 0;
@@ -19,7 +39,7 @@
   padding-top: 50px;
 }
 #app {
-  height: 120px;
+  height: 80px;
   opacity: 0;
 }
 /* #why {
@@ -31,7 +51,7 @@
   opacity: 0;
 }
 #works {
-  height: 150px;
+  height: 100px;
   opacity: 0;
 }
 #home {
@@ -100,6 +120,10 @@
 
 .white_dots {
   margin-left: -55px;
+}
+
+.fb-footer-icon {
+  margin-left: 4px;
 }
 
 /* 
@@ -282,7 +306,7 @@
   color: #1e1e1e;
 }
 .Image_wrapper {
-  margin-bottom: 120px;
+  margin-bottom: 0px;
 }
 .doctor-app-wrapper {
   margin-bottom: 16px;
@@ -304,13 +328,13 @@
 .doctor-list-wrapper {
   padding-left: 0px !important;
 }
-.doctor-list-wrapper > li {
+.doctor-list-wrapper > div > li {
   list-style-type: none;
   margin-bottom: 20px;
 }
 
 .img-tik-wrapper {
-  margin-right: 16px;
+  margin-right: 8px;
 }
 
 .Doctor-app-main-wrapper {
@@ -442,7 +466,7 @@
 }
 
 .vision-last-spacing {
-  margin-bottom: 120px;
+  margin-bottom: 0px;
 }
 
 .Get-eShaafi-App {
@@ -626,7 +650,7 @@
   }
 
   .Image_wrapper {
-    margin-bottom: 80px;
+    margin-bottom: 0px;
   }
   .Doctor-app-main-wrapper {
     margin-top: 0;
@@ -681,7 +705,7 @@
   }
 
   .Image_wrapper {
-    margin-bottom: 80px;
+    margin-bottom: 0px;
   }
   .Doctor-app-main-wrapper {
     margin-top: 0;
@@ -736,7 +760,7 @@
     margin-bottom: 67px;
   }
   .Image_wrapper {
-    margin-bottom: 80px;
+    margin-bottom: 0px;
   }
   .Doctor-app-main-wrapper {
     margin-top: 0;
@@ -826,7 +850,7 @@
     margin-right: 12px;
   }
   .Image_wrapper {
-    margin-bottom: 80px;
+    margin-bottom: 0px;
   }
   .Doctor-app-main-wrapper {
     margin-top: 0;
@@ -881,10 +905,7 @@
     margin-bottom: 40px;
   }
 
-  .img-tik-wrapper {
-    display: none;
-  }
-  .doctor-list-wrapper > li {
+  .doctor-list-wrapper > div > li {
     margin-bottom: 16px;
   }
   #works {

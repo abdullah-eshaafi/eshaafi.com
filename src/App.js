@@ -46,22 +46,14 @@ import fb from "./Images/fb.png";
 import twitter from "./Images/twitter.png";
 
 import yt from "./Images/yt.png";
-import { Link } from "react-router-dom";
+
 import linkdin from "./Images/linkdin.png";
+
+import Frame from "./Images/Frame.png";
 function App() {
-  const [selIndex, setSelectIndex] = useState(0);
-
-  const handleChangeColor = (index, e) => {
-    setSelectIndex(index);
-  };
-
   useEffect(() => {
     window.scrollTo(0, 0);
   });
-
-  // style={{
-  //   color: selIndex === index ? "#009B93" : "#1e1e1e",
-  // }}
 
   return (
     <div style={{ overflow: "hidden" }}>
@@ -76,19 +68,16 @@ function App() {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
-              <Nav className="ms-auto my-2 my-lg-0 " navbarScroll>
+              <Nav
+                className="ms-auto my-2 my-lg-0 nav-links-warpeer"
+                navbarScroll
+              >
                 <a href="#home">Home</a>
                 <a href="#why">Why Us?</a>
-                {/* {SidebarData.map((data, index) => (
-                  <span
-                    onClick={(e) => handleChangeColor(index, e)}
-                    key={index}
-                  >
-                    <a href={data.path} className="navbar_links_wrapper">
-                      {data.title}
-                    </a>
-                  </span>
-                ))} */}
+                <a href="#works">How It Works?</a>
+                <a href="#Doctor">For Doctors</a>
+                <a href="#about">About</a>
+                <a href="#app">Get App</a>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -236,7 +225,7 @@ function App() {
               <div className="d-flex justify-content-center">
                 <div className="col-lg-7 card-main-wrapper card-wrapper">
                   <div className="d-flex justify-content-center eshaafi-card_img-wrapper">
-                    <img src={patient_img} alt="..."></img>
+                    <img src={Frame} alt="..."></img>
                   </div>
                   <div className="col-lg-7 d-flex ">
                     <div className="eshaafi-card-heading">
@@ -350,46 +339,57 @@ function App() {
                 </div>
                 <div>
                   <ul className="doctor-list-wrapper">
-                    <li>
-                      <img
-                        src={tik}
-                        alt="..."
-                        className="img-tik-wrapper"
-                      ></img>
-                      Connect to more patients through online bookings
-                    </li>
-                    <li>
-                      <img
-                        src={tik}
-                        alt="..."
-                        className="img-tik-wrapper"
-                      ></img>
-                      Upload and manage your schedule with ease
-                    </li>
-                    <li>
-                      <img
-                        src={tik}
-                        alt="..."
-                        className="img-tik-wrapper"
-                      ></img>
-                      Introducing vacation mode for doctors
-                    </li>
-                    <li>
-                      <img
-                        src={tik}
-                        alt="..."
-                        className="img-tik-wrapper"
-                      ></img>
-                      Manage patients better with eShaafi Doctor App
-                    </li>
-                    <li>
-                      <img
-                        src={tik}
-                        alt="..."
-                        className="img-tik-wrapper"
-                      ></img>
-                      View shared medical history of patients
-                    </li>
+                    <div className="d-flex">
+                      <div>
+                        <img
+                          src={tik}
+                          alt="..."
+                          className="img-tik-wrapper"
+                        ></img>
+                      </div>
+                      <li>Connect to more patients through online bookings</li>
+                    </div>
+
+                    <div className="d-flex">
+                      <div>
+                        <img
+                          src={tik}
+                          alt="..."
+                          className="img-tik-wrapper"
+                        ></img>
+                      </div>
+                      <li> Upload and manage your schedule with ease</li>
+                    </div>
+                    <div className="d-flex">
+                      <div>
+                        <img
+                          src={tik}
+                          alt="..."
+                          className="img-tik-wrapper"
+                        ></img>
+                      </div>
+                      <li>Introducing vacation mode for doctors</li>
+                    </div>
+                    <div className="d-flex">
+                      <div>
+                        <img
+                          src={tik}
+                          alt="..."
+                          className="img-tik-wrapper"
+                        ></img>
+                      </div>
+                      <li>Manage patients better with eShaafi Doctor App</li>
+                    </div>
+                    <div className="d-flex">
+                      <div>
+                        <img
+                          src={tik}
+                          alt="..."
+                          className="img-tik-wrapper"
+                        ></img>
+                      </div>
+                      <li>View shared medical history of patients</li>
+                    </div>
                   </ul>
                 </div>
               </div>
@@ -582,7 +582,7 @@ function App() {
                 </div>
               </div>
               <div className="d-flex justify-content-md-between justify-content-around col-lg-4 youtube_links">
-                <div>
+                <div className="fb-footer-icon">
                   <a
                     href="https://www.facebook.com/eShaaficare/?ref=pages_you_manage&_rdc=1&_rdr"
                     target="_blank"

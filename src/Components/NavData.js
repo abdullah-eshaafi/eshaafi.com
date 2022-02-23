@@ -33,17 +33,3 @@ export const SidebarData = [
     path: "#app",
   },
 ];
-
-
-// <Nav className="ms-auto my-2 my-lg-0 " navbarScroll>
-// {SidebarData.map((data, index) => (
-//   <span
-//     onClick={(e) => handleChangeColor(index, e)}
-//     key={index}
-//   >
-//     <a href={data.path} className="navbar_links_wrapper">
-//       {data.title}
-//     </a>
-//   </span>
-// ))}
-// </Nav>
