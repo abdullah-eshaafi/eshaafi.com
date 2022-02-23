@@ -886,7 +886,7 @@
     margin-bottom: 16px;
   }
   .how_it_work_wrapper {
-    margin-top: 80px;
+    margin-top: 0px;
   }
   .Doctor_wrapper {
     margin-top: 80px;
@@ -944,5 +944,8 @@
   }
   .eshaafi-card-heading {
     margin-left: 16px;
+  }
+  .Doctor-app-main-wrapper {
+    margin-bottom: 0px;
   }
 }
