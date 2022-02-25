@@ -86,17 +86,17 @@ function App() {
     },
     {
       id: 3,
-      title: "Ilyas Ahmed",
+      title: "Farhan Khan",
       star: starts,
-      pic: Ahmed,
-      link: "Very helpful staff. Helped me book appointment with my gastroenterologist. I do all my scheduling through oladoc now. Thanks a bunch.",
+      pic: user,
+      link: "Dr. Aqsa is a good listener. Instead of just prescribing medicines, she guides me to change my diet plan as well to get rid of the disease.Stay blessed doctor.",
     },
     {
       id: 4,
-      title: "Ilyas Ahmed",
+      title: "Ahmed",
       star: starts,
       pic: Ahmed,
-      link: "The only good healthcare website in Pakistan. The suggested doctors are good and the doctors on the forum ate very responsive too",
+      link: "Great online consultation experience with Dr. Aqsa in all aspects. Highly recommended.",
     },
   ];
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -182,7 +182,10 @@ function App() {
                       </button>
                     </div>
                     <div className="col-xl-8 col-lg-6  d-xl-block d-lg-flex justify-content-lg-end">
-                      <button className="btn-apple">
+                      <button
+                        className="btn-apple"
+                        style={{ visibility: "hidden" }}
+                      >
                         <img src={apple} alt="..." className="res-img"></img>
                       </button>
                     </div>
@@ -590,7 +593,10 @@ function App() {
                     </button>
                   </div>
                   <div>
-                    <button className="btn-apple">
+                    <button
+                      className="btn-apple"
+                      style={{ visibility: "hidden" }}
+                    >
                       <img src={apple} alt="..." className="apple-world"></img>
                     </button>
                   </div>
