@@ -72,7 +72,7 @@ function App() {
   const slides = [
     {
       id: 1,
-      pic: ilyas,
+      pic: "https://terafort.s3.ap-southeast-1.amazonaws.com/ilyas.PNG",
       title: "Ilyas",
       star: starts,
       link: "One of the best online doctor booking apps I have ever used. eShaafi app is easy to use, I have booked the appointment within a few minutes. Highly recommended.",
@@ -81,21 +81,21 @@ function App() {
       id: 2,
       title: "Mrs. Khan",
       star: starts,
-      pic: user,
+      pic: "https://terafort.s3.ap-southeast-1.amazonaws.com/user.PNG",
       link: "Thank you eShaafi for the exceptional services. I can’t imagine that I found such an exceptional physician through an online doctor booking app. Highly recommended to all of you.",
     },
     {
       id: 3,
       title: "Farhan Khan",
       star: starts,
-      pic: user,
+      pic: "https://terafort.s3.ap-southeast-1.amazonaws.com/user.PNG",
       link: "Dr. Aqsa is a good listener. Instead of just prescribing medicines, she guides me to change my diet plan as well to get rid of the disease.Stay blessed doctor.",
     },
     {
       id: 4,
       title: "Ahmed",
       star: starts,
-      pic: Ahmed,
+      pic: "https://terafort.s3.ap-southeast-1.amazonaws.com/ahmed.PNG",
       link: "Great online consultation experience with Dr. Aqsa in all aspects. Highly recommended.",
     },
   ];
