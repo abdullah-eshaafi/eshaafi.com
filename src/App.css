@@ -419,7 +419,7 @@
 }
 
 .review-lady-img {
-  margin-right: 16px;
+  margin-right: 0px;
   margin-top: -4px;
 }
 
@@ -608,6 +608,20 @@
 
 .youtube_links {
   margin-top: 20px;
+}
+
+.left-arrow {
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  outline: none;
+  border: none;
+  margin-bottom: 16px;
+}
+
+.left-arrow > img {
+  width: 24px;
+  height: 24px;
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 992px) {
@@ -948,4 +962,58 @@
   .Doctor-app-main-wrapper {
     margin-bottom: 0px;
   }
+}
+
+.footer_bootom {
+  list-style-type: none;
+}
+
+li {
+  cursor: pointer;
+}
+
+.privacy_modal_header > h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #1e1e1e;
+  margin-bottom: 16px;
+}
+
+.privacy_modal_text > p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: #1e1e1e;
+}
+
+.privacy_modal_text_bold > p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+  /* identical to box height, or 140% */
+
+  letter-spacing: 0.02em;
+
+  color: #1e1e1e;
+}
+
+.privacy_modal_text > li {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: #1e1e1e;
+}
+
+.privacy-modal-text-margin {
+  margin-left: 24px;
 }
