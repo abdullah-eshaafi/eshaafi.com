@@ -1017,3 +1017,18 @@ li {
 .privacy-modal-text-margin {
   margin-left: 24px;
 }
+
+.accordian-heading {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.02em;
+
+  /* Black */
+
+  color: #1e1e1e;
+}
