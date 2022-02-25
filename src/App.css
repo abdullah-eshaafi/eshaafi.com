@@ -395,6 +395,13 @@
   padding-bottom: 24px;
 }
 
+.review-heading-wrapper {
+  padding-left: 60px;
+}
+
+.reviews-starts {
+  padding-left: 60px;
+}
 .review-heading-wrapper > h4 {
   font-family: Poppins;
   font-style: normal;
@@ -416,6 +423,8 @@
 }
 .review-lady-img {
   padding-left: 40px;
+  width: 60px;
+  height: 60px;
 }
 
 .review-lady-img {
@@ -433,18 +442,20 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 28px;
-  /* or 175% */
-
   letter-spacing: 0.5px;
-
-  /* Black */
 
   color: #1e1e1e;
 }
 
 .reviews-para-wrapper {
   margin-left: 40px;
-  padding-bottom: 156px;
+  height: 300px;
+}
+
+.review-lady-img > img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
 
 .vision-text-first > p {
@@ -952,6 +963,9 @@
     margin-left: 12px;
     margin-right: 12px;
   }
+  .reviews-para-wrapper {
+    height: 200px;
+  }
   .footer-main-wrapper {
     margin-left: 12px;
     margin-right: 12px;
@@ -966,6 +980,7 @@
 
 .footer_bootom {
   list-style-type: none;
+  padding-left: 0px;
 }
 
 li {
@@ -1021,14 +1036,18 @@ li {
 .accordian-heading {
   font-family: Poppins;
   font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  /* identical to box height, or 150% */
-
-  letter-spacing: 0.02em;
-
-  /* Black */
-
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 36px;
   color: #1e1e1e;
+}
+
+.faqs-heading {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #009b94 !important;
+  background-color: white !important;
 }

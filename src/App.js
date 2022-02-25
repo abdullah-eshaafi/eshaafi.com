@@ -36,6 +36,12 @@ import Frame from "./Images/Frame.png";
 import leftarrow from "./Images/left-arrow.png";
 import rightarrow from "./Images/right-arrow.png";
 
+import ilyas from "./Images/ilyas.PNG";
+
+import Ahmed from "./Images/ahmed.PNG";
+
+import user from "./Images/user.PNG";
+
 import { Modal } from "react-bootstrap";
 
 function App() {
@@ -66,18 +72,30 @@ function App() {
   const slides = [
     {
       id: 1,
-      link: "Very helpful staff. Helped me book appointment with my gastroenterologist. I do all my scheduling through oladoc now. Thanks a bunch.",
+      pic: ilyas,
+      title: "Ilyas",
+      star: starts,
+      link: "One of the best online doctor booking apps I have ever used. eShaafi app is easy to use, I have booked the appointment within a few minutes. Highly recommended.",
     },
     {
       id: 2,
-      link: "The only good healthcare website in Pakistan. The suggested doctors are good and the doctors on the forum ate very responsive too",
+      title: "Mrs. Khan",
+      star: starts,
+      pic: user,
+      link: "Thank you eShaafi for the exceptional services. I can’t imagine that I found such an exceptional physician through an online doctor booking app. Highly recommended to all of you.",
     },
     {
       id: 3,
+      title: "Ilyas Ahmed",
+      star: starts,
+      pic: Ahmed,
       link: "Very helpful staff. Helped me book appointment with my gastroenterologist. I do all my scheduling through oladoc now. Thanks a bunch.",
     },
     {
       id: 4,
+      title: "Ilyas Ahmed",
+      star: starts,
+      pic: Ahmed,
       link: "The only good healthcare website in Pakistan. The suggested doctors are good and the doctors on the forum ate very responsive too",
     },
   ];
@@ -93,16 +111,16 @@ function App() {
       return prev === 0 ? slides.length - 1 : currentSlide - 1;
     });
   };
-  React.useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentSlide((prev) => {
-        return prev + 1 === slides.length ? 0 : prev + 1;
-      });
-    }, 4000);
-    return () => {
-      clearInterval(intervalId);
-    };
-  }, [slides.length]);
+  // React.useEffect(() => {
+  //   const intervalId = setInterval(() => {
+  //     setCurrentSlide((prev) => {
+  //       return prev + 1 === slides.length ? 0 : prev + 1;
+  //     });
+  //   }, 4000);
+  //   return () => {
+  //     clearInterval(intervalId);
+  //   };
+  // }, [slides.length]);
 
   // useEffect(() => {
   //   window.scrollTo(0, 0);
@@ -474,14 +492,14 @@ function App() {
             <div>
               <div className="d-flex stars-img-text-wrapper">
                 <div className="review-lady-img">
-                  {/* <img src={review} alt="..."></img> */}
+                  <img src={slides[currentSlide].pic} alt="..."></img>
                 </div>
                 <div>
                   <div className="review-heading-wrapper">
-                    <h4>Jenny Wilson</h4>
+                    <h4>{slides[currentSlide].title}</h4>
                   </div>
                   <div className="reviews-starts">
-                    <img src={starts} alt="..."></img>
+                    <img src={slides[currentSlide].star} alt="..."></img>
                   </div>
                 </div>
               </div>
@@ -690,7 +708,7 @@ function App() {
               <Container>
                 <Row>
                   <Col>
-                    <div className="privacy_modal_header d-flex justify-content-center">
+                    <div className="privacy_modal_header d-flex justify-content-center faqs-heading">
                       <h2>Terms & Conditions</h2>
                     </div>
                   </Col>
@@ -1133,7 +1151,7 @@ function App() {
               <Container>
                 <Row>
                   <Col>
-                    <div className="privacy_modal_header d-flex justify-content-center">
+                    <div className="privacy_modal_header d-flex justify-content-center faqs-heading">
                       <h2>PRIVACY POLICY</h2>
                     </div>
                   </Col>
@@ -1797,7 +1815,11 @@ function App() {
             onHide={() => setShowF(false)}
           >
             <Modal.Header closeButton></Modal.Header>
+
             <Modal.Body>
+              <div className="privacy_modal_header d-flex justify-content-center faqs-heading">
+                <h2>FAQs</h2>
+              </div>
               <Accordion defaultActiveKey="0" flush>
                 <Accordion.Item eventKey="0">
                   <Accordion.Header className="accordian-heading">
@@ -1811,17 +1833,108 @@ function App() {
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
                   <Accordion.Header className="accordian-heading">
-                    Accordion Item #2
+                    Do you save credit card information?
                   </Accordion.Header>
                   <Accordion.Body className="accordian-heading">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
+                    eShaafi doesn’t store any data related to credit cards,
+                    online wallets, bank accounts, and any other financial
+                    information.
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="2">
+                  <Accordion.Header className="accordian-heading">
+                    How secure are my personal details?
+                  </Accordion.Header>
+                  <Accordion.Body className="accordian-heading">
+                    eShaafi uses a secure socket layer (SSL) internet security
+                    protocol to ensure no one can access your personal or
+                    banking information.
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="3">
+                  <Accordion.Header className="accordian-heading">
+                    What type of account can I use to pay online?
+                  </Accordion.Header>
+                  <Accordion.Body className="accordian-heading">
+                    You can use debit or credit cards, JazzCash and EasyPaisa to
+                    pay for your appointments.
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="4">
+                  <Accordion.Header className="accordian-heading">
+                    Is there any service fee applicable on online payments?
+                  </Accordion.Header>
+                  <Accordion.Body className="accordian-heading">
+                    There are no additional service charges for making online
+                    payments.
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="5">
+                  <Accordion.Header className="accordian-heading">
+                    Do I get a reimbursement in case of cancellation of my
+                    online appointment?
+                  </Accordion.Header>
+                  <Accordion.Body className="accordian-heading">
+                    Yes, please refer to the “Refund” section in Terms and
+                    Conditions.
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="6">
+                  <Accordion.Header className="accordian-heading">
+                    What type of personal data is collected?
+                  </Accordion.Header>
+                  <Accordion.Body className="accordian-heading">
+                    To register at eShaafi, the following information is
+                    collected:<br></br> Phone number (Mandatory) <br></br> Name
+                    (Optional) <br></br> Age (Optional) <br></br> Previous
+                    medical record (Optional) <br></br> Gender (Optional)
+                    <br></br> Email address (Optional)
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="7">
+                  <Accordion.Header className="accordian-heading">
+                    When is my information collected?
+                  </Accordion.Header>
+                  <Accordion.Body className="accordian-heading">
+                    Your information will be collected when you sign up on
+                    eshaafi.com or the eShaafi mobile app.
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="8">
+                  <Accordion.Header className="accordian-heading">
+                    May I cancel my appointment?
+                  </Accordion.Header>
+                  <Accordion.Body className="accordian-heading">
+                    Yes, you can cancel an appointment two hours before the
+                    appointment time. You can cancel a maximum of three
+                    appointments in a day.
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="9">
+                  <Accordion.Header className="accordian-heading">
+                    May I reschedule my appointment?
+                  </Accordion.Header>
+                  <Accordion.Body className="accordian-heading">
+                    Yes, you can reschedule your appointment two hours before
+                    the appointment time. And you can reschedule a maximum of
+                    three appointments in a day.
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="10">
+                  <Accordion.Header className="accordian-heading">
+                    What happens if I am not available at the appointment time?
+                  </Accordion.Header>
+                  <Accordion.Body className="accordian-heading">
+                    If a patient doesn’t receive a call due to any reason, the
+                    patient can request to reschedule the appointment by
+                    contacting eShaafi support.
                   </Accordion.Body>
                 </Accordion.Item>
               </Accordion>
@@ -1845,7 +1958,7 @@ function App() {
             </div>
           </Col>
           <Col lg={6}>
-            <div className="d-flex justify-content-end">
+            <div className="d-flex justify-content-md-end justify-content-center">
               <p>Copyright © 2022 • eShaafi.com</p>
             </div>
           </Col>
