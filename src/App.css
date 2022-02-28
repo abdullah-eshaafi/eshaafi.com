@@ -10,10 +10,15 @@
 
   /* Black */
 
-  color: #1e1e1e;
+  color: #1e1e1e !important;
   text-decoration: none;
   margin-left: 8px;
   margin-right: 8px;
+}
+
+.LINKS-MAIN-WRAPPER {
+  text-decoration: none;
+  color: #0f001a;
 }
 
 .nav-links-warpeer > a:hover {
@@ -38,6 +43,8 @@
   box-shadow: 0px 4px 16px rgba(75, 0, 129, 0.26);
   padding-top: 50px;
 }
+
+
 #app {
   height: 80px;
   opacity: 0;
@@ -60,6 +67,21 @@
   height: 100px;
   opacity: 0;
 }
+
+.satisfied-wrapper-heading > h4 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  /* identical to box height, or 118% */
+
+  letter-spacing: 0.25px;
+
+  color: white;
+  margin-bottom: 0px;
+}
+
 .navbar_links_wrapper {
   font-family: Poppins;
   font-style: normal;
@@ -349,18 +371,6 @@
   margin-top: 258px;
 }
 
-.satisfied-wrapper-heading > h4 {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 40px;
-  /* identical to box height, or 118% */
-
-  letter-spacing: 0.25px;
-
-  color: #ffffff;
-}
 .satisfied-wrapper-text {
   margin-top: 8px;
   margin-bottom: 150px;
@@ -396,11 +406,11 @@
 }
 
 .review-heading-wrapper {
-  padding-left: 60px;
+  padding-left: 40px;
 }
 
 .reviews-starts {
-  padding-left: 60px;
+  padding-left: 40px;
 }
 .review-heading-wrapper > h4 {
   font-family: Poppins;
@@ -940,16 +950,6 @@
     margin-left: 12px;
     margin-right: 12px;
   }
-  .satisfied-wrapper-heading > h4 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: 0.25px;
-
-    color: #ffffff;
-  }
 
   .vision-video {
     margin-left: 12px;
@@ -985,6 +985,9 @@
 
 li {
   cursor: pointer;
+}
+.privacy-policy-page-wrapper {
+  margin-top: 120px;
 }
 
 .privacy_modal_header > h2 {
