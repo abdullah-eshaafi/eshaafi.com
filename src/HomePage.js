@@ -733,11 +733,11 @@ function HomePage() {
             <div className="col-lg-10 col-12 ">
               <ul className="footer_bootom d-flex justify-content-between">
                 <Link to="terms" className="LINKS-MAIN-WRAPPER">
-                  <li>Terms</li>
+                  <li>Terms & Conditions</li>
                 </Link>
 
                 <Link to="Privacy" className="LINKS-MAIN-WRAPPER">
-                  <li>Privacy</li>
+                  <li>Privacy Policy</li>
                 </Link>
                 <Link to="FAQ" className="LINKS-MAIN-WRAPPER">
                   <li>FAQs</li>

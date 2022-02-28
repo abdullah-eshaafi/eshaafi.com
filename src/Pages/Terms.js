@@ -17,7 +17,7 @@ function Terms() {
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/Privacy">Privacy</Nav.Link>
 
-              <Nav.Link href="/Terms">Terms & Conditions</Nav.Link>
+              <Nav.Link href="/terms">Terms & Conditions</Nav.Link>
               <Nav.Link href="/FAQ">FAQs</Nav.Link>
             </Nav>
           </Navbar.Collapse>
