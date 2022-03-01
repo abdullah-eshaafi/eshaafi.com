@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant&family=Poppins&display=swap");
 
+.slide {
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.slide-active {
+  opacity: 1;
+  transition: 1s;
+  transform: scale(1.08);
+}
+
 .nav-links-warpeer > a {
   font-family: Poppins;
   font-style: normal;
@@ -50,10 +61,7 @@ a:hover {
   height: 80px;
   opacity: 0;
 }
-/* #why {
-  height: 50px;
-  background: red;
-} */
+
 #about {
   height: 100px;
   opacity: 0;
@@ -287,7 +295,7 @@ a:hover {
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 27px;
   /* identical to box height */
 
@@ -417,7 +425,7 @@ a:hover {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 28px;
   /* identical to box height, or 175% */
 
@@ -451,7 +459,7 @@ a:hover {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.5px;
 
@@ -991,12 +999,23 @@ li {
   margin-top: 120px;
 }
 
+.collection_of_data > h4 {
+  color: #009b94;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
 .privacy_modal_header > h2 {
   font-family: Poppins;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 40px;
-  line-height: 30px;
+  line-height: 50px;
   letter-spacing: 0.02em;
   color: #1e1e1e;
   margin-bottom: 16px;
@@ -1054,4 +1073,10 @@ li {
 .accordion-button:not(.collapsed) {
   color: #009b94 !important;
   background-color: white !important;
+}
+
+.terms-border-top {
+  padding-top: 16px;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 100px;
 }

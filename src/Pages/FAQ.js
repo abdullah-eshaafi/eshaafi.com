@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import eshaafi from "../Images/eShaafi.svg";
-import { Container, Navbar, Nav, Accordion } from "react-bootstrap";
+import { Container, Navbar, Nav, Accordion, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 function FAQ() {
+  useEffect(() => {
+    window.scroll(0, 0);
+  });
   return (
     <div className="privacy-policy-page-wrapper">
       <Navbar collapseOnSelect expand="lg" bg="white fixed-top">
@@ -15,9 +19,10 @@ function FAQ() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto nav-links-warpeer">
               <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/Privacy">Privacy</Nav.Link>
 
               <Nav.Link href="/terms">Terms & Conditions</Nav.Link>
+              <Nav.Link href="/Privacy">Privacy Policy</Nav.Link>
+
               <Nav.Link href="/FAQ">FAQs</Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -144,6 +149,43 @@ function FAQ() {
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
+        <div className="terms-border-top">
+          {" "}
+          <Row>
+            <Col lg={6}>
+              <div className="col-lg-10 col-12 ">
+                <ul className="footer_bootom d-flex justify-content-between">
+                  <Link to="/terms" className="LINKS-MAIN-WRAPPER">
+                    <li>Terms & Conditions</li>
+                  </Link>
+
+                  <Link to="/Privacy" className="LINKS-MAIN-WRAPPER">
+                    <li>Privacy Policy</li>
+                  </Link>
+                  <Link to="/FAQ" className="LINKS-MAIN-WRAPPER">
+                    <li>FAQs</li>
+                  </Link>
+
+                  <li>
+                    <a
+                      href="https://wa.me/923111088882"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="LINKS-MAIN-WRAPPER"
+                    >
+                      Help{" "}
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </Col>
+            <Col lg={6}>
+              <div className="d-flex justify-content-md-end justify-content-center">
+                <p>Copyright © 2022 • eShaafi.com</p>
+              </div>
+            </Col>
+          </Row>
+        </div>
       </Container>
     </div>
   );

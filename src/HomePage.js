@@ -39,6 +39,8 @@ import rightarrow from "./Images/right-arrow.png";
 import { Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
+import fouestar from "./Images/4star.png";
+
 function HomePage() {
   const values = [true];
   const [showP, setShowP] = useState(false);
@@ -94,14 +96,14 @@ function HomePage() {
     {
       id: 1,
       pic: "https://terafort.s3.ap-southeast-1.amazonaws.com/ilyas.PNG",
-      title: "Ilyas",
+      title: "Muhammad Ilyas",
       star: starts,
       link: "One of the best online doctor booking apps I have ever used. eShaafi app is easy to use, I have booked the appointment within a few minutes. Highly recommended.",
     },
     {
       id: 2,
       title: "Mrs. Khan",
-      star: starts,
+      star: fouestar,
       pic: "https://terafort.s3.ap-southeast-1.amazonaws.com/user.PNG",
       link: "Thank you eShaafi for the exceptional services. I can’t imagine that I found such an exceptional physician through an online doctor booking app. Highly recommended to all of you.",
     },
@@ -114,8 +116,8 @@ function HomePage() {
     },
     {
       id: 4,
-      title: "Ahmed",
-      star: starts,
+      title: "Ahmed Usmani",
+      star: fouestar,
       pic: "https://terafort.s3.ap-southeast-1.amazonaws.com/ahmed.PNG",
       link: "Great online consultation experience with Dr. Aqsa in all aspects. Highly recommended.",
     },
@@ -494,7 +496,13 @@ function HomePage() {
           </div>
         </Col>
         <Col xl={6} className="reviwes-wrapper px-0">
-          <div className="col-lg-9 col-12 reviews-card-wrapper">
+          <div
+            className={
+              slides[currentSlide]
+                ? "col-lg-9 col-12 reviews-card-wrapper"
+                : "col-lg-9 col-12 reviews-card-wrapper "
+            }
+          >
             <div className="d-flex justify-content-end reviwes-inverted-img">
               <img src={inverted} alt=".."></img>
             </div>
@@ -652,7 +660,7 @@ function HomePage() {
                     <img src={call} alt=""></img>
                   </div>
                   <div className="footer-phone">
-                    <p>+92 301 1166 523</p>
+                    <p>+92 311 10 88 882</p>
                   </div>
                 </div>
                 <div className="d-flex">
@@ -743,7 +751,16 @@ function HomePage() {
                   <li>FAQs</li>
                 </Link>
 
-                <li>Help</li>
+                <li>
+                  <a
+                    href="https://wa.me/923111088882"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="LINKS-MAIN-WRAPPER"
+                  >
+                    Help{" "}
+                  </a>
+                </li>
               </ul>
             </div>
           </Col>
