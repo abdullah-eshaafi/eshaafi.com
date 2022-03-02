@@ -581,6 +581,39 @@ a:hover {
 
   color: #5c5c5c;
 }
+
+.input-color {
+  border: none;
+}
+.input-filed-color > input {
+  border: 1px solid red;
+  width: 70%;
+  height: 48px;
+
+  background: #ffffff;
+  border-radius: 4px;
+  padding-left: 8px;
+}
+.input-filed-color > button {
+  width: 30%;
+  height: 48px;
+  outline: none;
+  border: none;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 1.25px;
+
+  color: #ffffff;
+  background: #009b94;
+  border-radius: 4px;
+}
+
 .Get-eShaafi-App-input > button {
   width: 30%;
   height: 48px;
@@ -601,12 +634,9 @@ a:hover {
   border-radius: 4px;
 }
 
-.Get-eShaafi-App-input {
-  margin-bottom: 40px;
+.Get-eShaafi-App-btn {
+  margin-top: 6px;
 }
-/* .Get-eShaafi-App-btn {
-  margin-bottom: 64px;
-} */
 
 .Get-eShaafi-App-second-image {
   margin-top: 100px;
@@ -1079,4 +1109,26 @@ li {
   padding-top: 16px;
   border-top: 1px solid #e5e5e5;
   margin-top: 100px;
+}
+
+.modal-img-wrapper {
+  width: 70%;
+}
+
+.modal-img-wrapper > img {
+  width: 100%;
+}
+
+.modal-img-wrapper > h6 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  /* identical to box height, or 140% */
+
+  letter-spacing: 0.02em;
+
+  color: #009b94;
+  margin-bottom: 0px;
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import eshaafi from "./Images/eShaafi.svg";
 
@@ -36,32 +36,33 @@ import Frame from "./Images/Frame.png";
 import leftarrow from "./Images/left-arrow.png";
 import rightarrow from "./Images/right-arrow.png";
 
-import { Modal } from "react-bootstrap";
+import { Modal, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import fouestar from "./Images/4star.png";
+import axios from "axios";
 
 function HomePage() {
-  const values = [true];
-  const [showP, setShowP] = useState(false);
-
-  const [showF, setShowF] = useState(false);
-  const [fullscreenF, setFullscreenF] = useState(true);
-  const [fullscreen, setFullscreen] = useState(true);
-
-  const [fullscreenP, setFullscreenP] = useState(true);
-  const [show, setShow] = useState(false);
-
   const [maxNum, setMaxNum] = useState(parseInt(11));
   const [value, setValue] = useState("");
+  const [error, setError] = useState("");
+
+  const [message, setmessage] = useState("");
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const handlePhoneNumber = (e) => {
+    setError("");
     let element = e.target;
-    element.value = element.value.replace(/[^0-9,+]/gi, "");
+    element.value = element.value.replace(/[^0-9,+]$/gm, "");
 
     if (element.value.charAt(0) === "+") {
       setMaxNum(13);
-    } else if (element.value.charAt(0) === "3") {
-      setMaxNum(10);
+    } else if (element.value.charAt(0) === 0) {
+      setMaxNum(11);
     } else {
       setMaxNum(11);
     }
@@ -69,29 +70,63 @@ function HomePage() {
   };
 
   const handleSubmission = () => {
-    if (value.charAt(0) === "+") {
-      console.log("plus");
-    } else if (value.charAt(0) === "3") {
-      console.log("three");
+    if (value === "") {
+      setError("Please enter a number");
+      return "";
+    } else if (value.length !== maxNum) {
+      setError("Please enter a valid number");
+    } else if (value.charAt(0) !== "0" && maxNum === 11) {
+      setError("Please enter a valid number ");
+    } else if (value.charAt(1) !== "3" && maxNum === 11) {
+      setError("Please enter a valid number ");
+    } else if (
+      value.charAt(2) === "6" ||
+      value.charAt(2) === "7" ||
+      value.charAt(2) === "8" ||
+      (value.charAt(2) === "9" && maxNum === 11)
+    ) {
+      setError("Please enter a valid number ");
+    } else if (value.charAt(0) !== "+" && maxNum === 13) {
+      setError("Please enter a valid number ");
+    } else if (value.charAt(1) !== "9" && maxNum === 13) {
+      setError("Please enter a valid number ");
+    } else if (value.charAt(2) !== "2" && maxNum === 13) {
+      setError("Please enter a valid number ");
+    } else if (value.charAt(3) !== "3" && maxNum === 13) {
+      setError("Please enter a valid number ");
+    } else if (
+      (value.charAt(4) === "6" && maxNum === 13) ||
+      (value.charAt(4) === "7" && maxNum === 13) ||
+      (value.charAt(4) === "8" && maxNum === 13) ||
+      (value.charAt(4) === "9" && maxNum === 13)
+    ) {
+      setError("Please enter a valid number");
     } else {
-      console.log("hello");
+      axios
+        .get(
+          `https://li0tqhwqqj.execute-api.us-east-1.amazonaws.com/dev/user/sendSmsForApp/${value}`
+        )
+        .then((res) => {
+          if (res.status === 200) {
+            // console.log("dfgrf");
+            // setPhoneNumber("");
+            setmessage(res.data.response.message);
+            setValue("");
+            setTimeout((e) => {
+              setmessage("");
+            }, 2000);
+          }
+        })
+        .catch((err) => {
+          console.log(err);
+          setValue("");
+          setTimeout((e) => {
+            setmessage("");
+          }, 2000);
+        });
     }
   };
 
-  function handleShow(breakpoint) {
-    setFullscreen(breakpoint);
-    setShow(true);
-  }
-
-  function handleShowF(breakpoint) {
-    setFullscreenF(breakpoint);
-    setShowF(true);
-  }
-
-  function handleShowP(breakpoint) {
-    setFullscreenP(breakpoint);
-    setShowP(true);
-  }
   const slides = [
     {
       id: 1,
@@ -185,7 +220,7 @@ function HomePage() {
                 >
                   <div className="col-xl-6 col-lg-6 col-md-7 col-12 d-flex justify-content-between">
                     <div className="col-xl-8 col-lg-6">
-                      <button className="btn-android">
+                      <button className="btn-android" onClick={handleShow}>
                         <img src={andriod} alt="..." className="res-img"></img>
                       </button>
                     </div>
@@ -592,7 +627,14 @@ function HomePage() {
                 <div className="Get-eShaafi-App-download">
                   <h5>Get the link to download app</h5>
                 </div>
-                <div className="Get-eShaafi-App-input col-lg-8 d-flex">
+
+                <div
+                  className={
+                    error
+                      ? "input-filed-color col-lg-8 d-flex"
+                      : "Get-eShaafi-App-input col-lg-8 d-flex"
+                  }
+                >
                   <input
                     type="text"
                     value={value}
@@ -603,9 +645,15 @@ function HomePage() {
                   />
                   <button onClick={handleSubmission}>Get Link</button>
                 </div>
+                <div className="col-lg-8 d-flex">
+                  <p style={{ color: "red", height: "12px" }}>{error}</p>
+                </div>
+                <div className="col-lg-8 d-flex">
+                  <p style={{ height: "12px" }}>{message}</p>
+                </div>
                 <div className="col-lg-6 d-flex justify-content-between Get-eShaafi-App-btn">
                   <div className="col-lg-8">
-                    <button className="btn-android">
+                    <button className="btn-android" onClick={handleShow}>
                       <img
                         src={andriod}
                         alt="..."
@@ -724,18 +772,6 @@ function HomePage() {
             </div>
           </Col>
         </Row>
-
-        <div>
-          <Modal
-            show={showF}
-            fullscreen={fullscreenF}
-            onHide={() => setShowF(false)}
-          >
-            <Modal.Header closeButton></Modal.Header>
-
-            <Modal.Body></Modal.Body>
-          </Modal>
-        </div>
         <Row>
           <Col lg={6}>
             <div className="col-lg-10 col-12 ">
@@ -771,6 +807,25 @@ function HomePage() {
           </Col>
         </Row>
       </Container>
+      <Modal show={show} onHide={handleClose} animation={false} centered>
+        <Modal.Header closeButton>
+          <Modal.Title>
+            <img src={eshaafi} alt=".."></img>
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div className="d-flex justify-content-center">
+            <div className="modal-img-wrapper">
+              <img src={app}></img>
+            </div>
+            <div className="modal-img-wrapper d-flex align-items-center ">
+              <h6>
+                Eshaafi App<br></br> Coming Soon...
+              </h6>
+            </div>
+          </div>
+        </Modal.Body>
+      </Modal>
     </div>
   );
 }
