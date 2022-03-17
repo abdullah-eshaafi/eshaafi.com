@@ -51,7 +51,7 @@ export default function Blog() {
       <Navbar collapseOnSelect expand='lg' bg='white fixed-top'>
         <Container>
           <Navbar.Brand to='/'>
-            <a href='#home'>
+            <a href='/'>
               <img src={eshaafi} alt='...'></img>
             </a>
           </Navbar.Brand>
