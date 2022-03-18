@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant&family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Poppins&display=swap');
+
+.blog-post-wrapper {
+  padding-bottom: 100px;
+}
 
 .slide {
   opacity: 0;
@@ -453,6 +457,18 @@ a:hover {
 
 .stars-img-text-wrapper {
   padding-bottom: 24px;
+}
+
+.row-footer {
+  min-height: 100%;
+  position: relative;
+}
+
+.footer-position {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
 }
 
 .reviews-para-wrapper > p {

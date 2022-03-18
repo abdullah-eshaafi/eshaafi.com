@@ -1,6 +1,6 @@
 import blogImage from './blogImage.jpg'
 import { Link } from 'react-router-dom'
-import { Nav, Navbar, Container } from 'react-bootstrap'
+import { Nav, Navbar, Container, Row, Col } from 'react-bootstrap'
 import eshaafi from '../../Images/eShaafi.svg'
 const blogPosts = [
   {
@@ -64,11 +64,58 @@ export default function Blog() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <div className='container my-4' style={{ paddingTop: '100px' }}>
-        <div className='row'>
+      <div className='container my-4'>
+        <div
+          className='row'
+          style={{
+            paddingTop: '100px',
+            minHeight: '100%',
+            position: 'relative',
+          }}
+        >
           <div className='col-sm-12 col-md-6 col-lg-4'>
             <Card />
           </div>
+          {/* <div className='footer-wrapper-'>
+            <div className='terms-border-top footer-position container'>
+              {' '}
+              <Row>
+                <Col lg={6}>
+                  <div className='col-lg-10 col-12 '>
+                    <ul className='footer_bootom d-flex justify-content-between'>
+                      <Link to='/terms' className='LINKS-MAIN-WRAPPER'>
+                        <li>Terms & Conditions</li>
+                      </Link>
+
+                      <Link to='/Privacy' className='LINKS-MAIN-WRAPPER'>
+                        <li>Privacy Policy</li>
+                      </Link>
+                      <Link to='/FAQ' className='LINKS-MAIN-WRAPPER'>
+                        <li>FAQs</li>
+                      </Link>
+
+                      <li>
+                        <a
+                          href='https://wa.me/923111088882'
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          className='LINKS-MAIN-WRAPPER'
+                        >
+                          Help{' '}
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </Col>
+                <Col lg={6}>
+                  <div className='d-flex justify-content-md-end justify-content-center'>
+                    <p>Copyright © 2022 • eShaafi.com</p>
+                  </div>
+                </Col>
+              </Row>
+            </div>
+          </div> */}
+
           {/* <div className='col-sm-12 col-md-6 col-lg-4'>
             <Card />
           </div>

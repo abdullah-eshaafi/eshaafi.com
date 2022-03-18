@@ -1,6 +1,7 @@
 import blogImage from './blogImage.jpg'
-import { Nav, Navbar, Container } from 'react-bootstrap'
+import { Nav, Navbar, Container, Row, Col } from 'react-bootstrap'
 import eshaafi from '../../Images/eShaafi.svg'
+import { Link } from 'react-router-dom'
 export default function BlogPost() {
   return (
     <>
@@ -20,8 +21,11 @@ export default function BlogPost() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <div className='container my-4'>
-        <div className='row'>
+      <div
+        className='container my-4 row-footer'
+      
+      >
+        <div className='row blog-post-wrapper'>
           <div className='col-10'>
             <div className='d-flex flex-column w-100'>
               <div className='blog-Image'>
@@ -67,6 +71,43 @@ export default function BlogPost() {
             </div>
           </div>
         </div>
+        {/* <div className='terms-border-top footer-position'>
+          {' '}
+          <Row>
+            <Col lg={6}>
+              <div className='col-lg-10 col-12 '>
+                <ul className='footer_bootom d-flex justify-content-between'>
+                  <Link to='/terms' className='LINKS-MAIN-WRAPPER'>
+                    <li>Terms & Conditions</li>
+                  </Link>
+
+                  <Link to='/Privacy' className='LINKS-MAIN-WRAPPER'>
+                    <li>Privacy Policy</li>
+                  </Link>
+                  <Link to='/FAQ' className='LINKS-MAIN-WRAPPER'>
+                    <li>FAQs</li>
+                  </Link>
+
+                  <li>
+                    <a
+                      href='https://wa.me/923111088882'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='LINKS-MAIN-WRAPPER'
+                    >
+                      Help{' '}
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </Col>
+            <Col lg={6}>
+              <div className='d-flex justify-content-md-end justify-content-center'>
+                <p>Copyright © 2022 • eShaafi.com</p>
+              </div>
+            </Col>
+          </Row>
+        </div> */}
       </div>
     </>
   )

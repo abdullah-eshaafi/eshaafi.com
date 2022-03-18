@@ -8,22 +8,23 @@ function Privacy() {
     window.scroll(0, 0);
   });
   return (
-    <div className="privacy-policy-page-wrapper">
-      <Navbar collapseOnSelect expand="lg" bg="white fixed-top">
+    <div className='privacy-policy-page-wrapper'>
+      <Navbar collapseOnSelect expand='lg' bg='white fixed-top'>
         <Container>
-          <Navbar.Brand to="/">
-            <a href="/">
-              <img src={eshaafi} alt="..."></img>
+          <Navbar.Brand to='/'>
+            <a href='/'>
+              <img src={eshaafi} alt='...'></img>
             </a>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="ms-auto nav-links-warpeer">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/terms">Terms & Conditions</Nav.Link>
-              <Nav.Link href="/Privacy">Privacy Policy</Nav.Link>
+          <Navbar.Toggle aria-controls='responsive-navbar-nav' />
+          <Navbar.Collapse id='responsive-navbar-nav'>
+            <Nav className='ms-auto nav-links-warpeer'>
+              <Nav.Link href='/'>Home</Nav.Link>
+              <Nav.Link href='/terms'>Terms & Conditions</Nav.Link>
+              <Nav.Link href='/Privacy'>Privacy Policy</Nav.Link>
 
-              <Nav.Link href="/FAQ">FAQs</Nav.Link>
+              <Nav.Link href='/FAQ'>FAQs</Nav.Link>
+              <Nav.Link href='/blog'>Blog</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -31,38 +32,38 @@ function Privacy() {
       <Container>
         <Row>
           <Col>
-            <div className="privacy_modal_header d-flex justify-content-center faqs-heading">
+            <div className='privacy_modal_header d-flex justify-content-center faqs-heading'>
               <h2>PRIVACY POLICY</h2>
             </div>
           </Col>
         </Row>
         <Row>
           <Col>
-            <div className="privacy_modal_text">
-              <p className="user-select">
+            <div className='privacy_modal_text'>
+              <p className='user-select'>
                 Welcome to the eShaafi privacy policy. In this Privacy Policy,
                 we explain
               </p>
             </div>
 
             <div>
-              <ul className="privacy_modal_text privacy-modal-list-text privacy-modal-text-margin">
-                <li className="user-select">
+              <ul className='privacy_modal_text privacy-modal-list-text privacy-modal-text-margin'>
+                <li className='user-select'>
                   The ways we collect user data and why we do so
                 </li>
-                <li className="user-select">How we use user information</li>
+                <li className='user-select'>How we use user information</li>
 
-                <li className="user-select">
+                <li className='user-select'>
                   The choices you have about your personal data
                 </li>
               </ul>
             </div>
 
-            <div className="collection_of_data">
-              <h4 className="user-select">HOW TO CONTACT US</h4>
+            <div className='collection_of_data'>
+              <h4 className='user-select'>HOW TO CONTACT US</h4>
             </div>
-            <div className="privacy_modal_text">
-              <p className="user-select">
+            <div className='privacy_modal_text'>
+              <p className='user-select'>
                 If you have any questions about this privacy policy, contact our
                 privacy team including our data protection officer by simply
                 sending an email to contact@eshaafi.com or calling us at +92
@@ -73,23 +74,23 @@ function Privacy() {
             {/* 
   //jhere */}
 
-            <div className="collection_of_data">
-              <h4 className="user-select">
+            <div className='collection_of_data'>
+              <h4 className='user-select'>
                 1. WHO CAN ACCESS YOUR INFORMATION
               </h4>
             </div>
-            <div className="privacy_modal_text ">
-              <p className="user-select">
+            <div className='privacy_modal_text '>
+              <p className='user-select'>
                 Apart from eShaafi, your data can be accessed by others in the
                 following situations:
               </p>
             </div>
 
-            <div className="collection_of_data privacy-modal-text-margin">
-              <h4 className="user-select">1.1 Partners Working For eShaafi</h4>
+            <div className='collection_of_data privacy-modal-text-margin'>
+              <h4 className='user-select'>1.1 Partners Working For eShaafi</h4>
             </div>
-            <div className="privacy_modal_text privacy-modal-text-margin">
-              <p className="user-select">
+            <div className='privacy_modal_text privacy-modal-text-margin'>
+              <p className='user-select'>
                 eShaafi has partners to perform certain services on our behalf.
                 These partners process your data according to eShaafi
                 instructions in order to provide services such as hosting,
@@ -97,19 +98,19 @@ function Privacy() {
               </p>
             </div>
 
-            <div className="collection_of_data privacy-modal-text-margin">
-              <h4 className="user-select">
+            <div className='collection_of_data privacy-modal-text-margin'>
+              <h4 className='user-select'>
                 1.2 Other Companies & Public Authorities
               </h4>
             </div>
             <div>
-              <ul className="privacy_modal_text privacy-modal-list-text privacy-modal-text-margin">
-                <li className="user-select">
+              <ul className='privacy_modal_text privacy-modal-list-text privacy-modal-text-margin'>
+                <li className='user-select'>
                   To combat fraud and illegal activity, we may exchange data
                   with other companies and organizations and provide it to
                   public authorities in response to lawful requests
                 </li>
-                <li className="user-select">
+                <li className='user-select'>
                   We may also disclose your data based on your consent to comply
                   with the law or to protect the rights, property, or safety of
                   us, our patients, doctors and others
@@ -117,112 +118,112 @@ function Privacy() {
               </ul>
             </div>
 
-            <div className="collection_of_data">
-              <h4 className="user-select">2. INFORMATION WE COLLECT</h4>
+            <div className='collection_of_data'>
+              <h4 className='user-select'>2. INFORMATION WE COLLECT</h4>
             </div>
 
-            <div className="collection_of_data privacy-modal-text-margin">
-              <h4 className="user-select">2.1 Information You Provide Us</h4>
+            <div className='collection_of_data privacy-modal-text-margin'>
+              <h4 className='user-select'>2.1 Information You Provide Us</h4>
             </div>
 
             <div>
-              <ul className="privacy_modal_text privacy-modal-list-text privacy-modal-text-margin">
-                <li className="user-select">
+              <ul className='privacy_modal_text privacy-modal-list-text privacy-modal-text-margin'>
+                <li className='user-select'>
                   Contact information (such as your name, phone number,
                   residential and email address)
                 </li>
-                <li className="user-select">
+                <li className='user-select'>
                   Your birthdate, age, gender and occupation
                 </li>
-                <li className="user-select">Your username and password</li>
-                <li className="user-select">Previous medical record</li>
+                <li className='user-select'>Your username and password</li>
+                <li className='user-select'>Previous medical record</li>
 
-                <li className="user-select">
+                <li className='user-select'>
                   Profile information (such as a profile picture)
                 </li>
 
-                <li className="user-select">
+                <li className='user-select'>
                   Information that you provide when seeking help from our
                   customer service (such as chat logs, contact details e.g.,
                   your phone number, and email address if necessary to resolve
                   your request)
                 </li>
 
-                <li className="user-select">
+                <li className='user-select'>
                   Personally identifiable information you voluntarily provide
                   when you take a survey, poll, enter a contest, or other
                   promotional purposes
                 </li>
 
-                <li className="user-select">
+                <li className='user-select'>
                   Other information you provide us (such as information used to
                   identify a lost account or update your information)
                 </li>
               </ul>
             </div>
 
-            <div className="collection_of_data privacy-modal-text-margin">
-              <h4 className="user-select">
+            <div className='collection_of_data privacy-modal-text-margin'>
+              <h4 className='user-select'>
                 2.2 Information we automatically collect from you while using
                 our services
               </h4>
             </div>
 
             <div>
-              <ul className="privacy_modal_text privacy-modal-list-text privacy-modal-text-margin">
-                <li className="user-select">
+              <ul className='privacy_modal_text privacy-modal-list-text privacy-modal-text-margin'>
+                <li className='user-select'>
                   IP address and device identifiers such as device ID,
                   advertising ID, IMEI, URL through which you accessed our site,
                   which URL you next go to
                 </li>
-                <li className="user-select">
+                <li className='user-select'>
                   Information about your device (such as device name, operating
                   system, browser information including browser type and the
                   language you prefer)
                 </li>
 
-                <li className="user-select">
+                <li className='user-select'>
                   Information we collect using cookies and similar technologies
                 </li>
 
-                <li className="user-select">General geolocation information</li>
-                <li className="user-select">
+                <li className='user-select'>General geolocation information</li>
+                <li className='user-select'>
                   Precise geolocation information (GPS) if you configure your
                   device location settings
                 </li>
-                <li className="user-select">Patient ID</li>
+                <li className='user-select'>Patient ID</li>
               </ul>
             </div>
 
-            <div className="collection_of_data privacy-modal-text-margin">
-              <h4 className="user-select">
+            <div className='collection_of_data privacy-modal-text-margin'>
+              <h4 className='user-select'>
                 2.3 Information we obtain from our partners (Advertisers,
                 Publishers, Billing Partners, Ad Network Providers)
               </h4>
             </div>
 
             <div>
-              <ul className="privacy_modal_text privacy-modal-list-text privacy-modal-text-margin">
-                <li className="user-select">
+              <ul className='privacy_modal_text privacy-modal-list-text privacy-modal-text-margin'>
+                <li className='user-select'>
                   Information from billing and distribution partners
                 </li>
-                <li className="user-select">
+                <li className='user-select'>
                   Information for advertising and analytics purposes so we can
                   provide you with better services
                 </li>
 
-                <li className="user-select">
+                <li className='user-select'>
                   Information we obtain from Ad network providers
                 </li>
               </ul>
             </div>
 
-            <div className="collection_of_data">
-              <h4 className="user-select">3. HOW WE USE YOUR INFORMATION</h4>
+            <div className='collection_of_data'>
+              <h4 className='user-select'>3. HOW WE USE YOUR INFORMATION</h4>
             </div>
 
-            <div className="privacy_modal_text ">
-              <p className="user-select">
+            <div className='privacy_modal_text '>
+              <p className='user-select'>
                 We use this information to do internal research on our users’
                 demographics, interests, and behaviour to better understand,
                 protect, and serve our patients. We also use this information to
@@ -235,12 +236,12 @@ function Privacy() {
               </p>
             </div>
 
-            <div className="collection_of_data">
-              <h4 className="user-select">4. INFORMATION WE SHARE</h4>
+            <div className='collection_of_data'>
+              <h4 className='user-select'>4. INFORMATION WE SHARE</h4>
             </div>
 
-            <div className="privacy_modal_text ">
-              <p className="user-select">
+            <div className='privacy_modal_text '>
+              <p className='user-select'>
                 We may use your aggregate information for market research to
                 make our services better. We may share your information with our
                 clients, affiliates, charity partners, and third parties for
@@ -252,8 +253,8 @@ function Privacy() {
               </p>
             </div>
 
-            <div className="privacy_modal_text ">
-              <p className="user-select">
+            <div className='privacy_modal_text '>
+              <p className='user-select'>
                 Your user name, city, profile photo, publicly declared
                 preferences, and some of your activity may be shared with other
                 users. You may also see such information related to other users
@@ -261,8 +262,8 @@ function Privacy() {
               </p>
             </div>
 
-            <div className="privacy_modal_text ">
-              <p className="user-select">
+            <div className='privacy_modal_text '>
+              <p className='user-select'>
                 Your personal information will also be shared with companies,
                 organizations, or individuals outside the company if we have a
                 good-faith belief that access, use, preservation, or disclosure
@@ -271,22 +272,22 @@ function Privacy() {
             </div>
 
             <div>
-              <ul className="privacy_modal_text privacy-modal-list-text privacy-modal-text-margin">
-                <li className="user-select">
+              <ul className='privacy_modal_text privacy-modal-list-text privacy-modal-text-margin'>
+                <li className='user-select'>
                   Meet any applicable law, regulation, legal process, or
                   enforceable governmental request
                 </li>
-                <li className="user-select">
+                <li className='user-select'>
                   Enforce applicable Terms of Service, including investigation
                   of potential violations
                 </li>
 
-                <li className="user-select">
+                <li className='user-select'>
                   Detect, prevent, or otherwise address fraud, security, or
                   technical issues
                 </li>
 
-                <li className="user-select">
+                <li className='user-select'>
                   Protect against harm to the rights, property, safety of the
                   company, our users, or the public as required or permitted by
                   law
@@ -294,38 +295,38 @@ function Privacy() {
               </ul>
             </div>
 
-            <div className="collection_of_data">
-              <h4 className="user-select">
+            <div className='collection_of_data'>
+              <h4 className='user-select'>
                 5. WHY WE COLLECT YOUR INFORMATION
               </h4>
             </div>
 
             <div>
-              <ul className="privacy_modal_text privacy-modal-list-text privacy-modal-text-margin">
-                <li className="user-select">
+              <ul className='privacy_modal_text privacy-modal-list-text privacy-modal-text-margin'>
+                <li className='user-select'>
                   To communicate necessary account and product/service related
                   information from time to time
                 </li>
-                <li className="user-select">
+                <li className='user-select'>
                   To allow you to receive quality customer care services
                 </li>
 
-                <li className="user-select">
+                <li className='user-select'>
                   To undertake necessary fraud and money laundering prevention
                   checks and comply with the highest security standards
                 </li>
 
-                <li className="user-select">
+                <li className='user-select'>
                   To comply with applicable laws, rules, and regulations
                 </li>
-                <li className="user-select">
+                <li className='user-select'>
                   To provide you with information and offers on products and
                   services related to updates, promotions, affiliated or
                   associated service providers, and partners that we believe
                   would be of interest to you
                 </li>
 
-                <li className="user-select">
+                <li className='user-select'>
                   If any service requested by you involves a third party, such
                   information is reasonably necessary for us to carry out your
                   service request that may be shared with a third party
@@ -333,18 +334,18 @@ function Privacy() {
               </ul>
             </div>
 
-            <div className="collection_of_data">
-              <h4 className="user-select">
+            <div className='collection_of_data'>
+              <h4 className='user-select'>
                 6. WHAT TYPES OF INFORMATION DO WE COLLECT
               </h4>
             </div>
 
-            <div className="collection_of_data privacy-modal-text-margin">
-              <h4 className="user-select">6.1 Financial Information</h4>
+            <div className='collection_of_data privacy-modal-text-margin'>
+              <h4 className='user-select'>6.1 Financial Information</h4>
             </div>
 
-            <div className="privacy_modal_text privacy-modal-text-margin">
-              <p className="user-select">
+            <div className='privacy_modal_text privacy-modal-text-margin'>
+              <p className='user-select'>
                 The patients have to choose to provide payment-related financial
                 information to us including (credit card, debit card, bank
                 account details, billing address, etc.). We are committed to
@@ -372,12 +373,12 @@ function Privacy() {
               </p>
             </div>
 
-            <div className="collection_of_data privacy-modal-text-margin">
-              <h4 className="user-select">6.2 Medical Information</h4>
+            <div className='collection_of_data privacy-modal-text-margin'>
+              <h4 className='user-select'>6.2 Medical Information</h4>
             </div>
 
-            <div className="privacy_modal_text privacy-modal-text-margin">
-              <p className="user-select">
+            <div className='privacy_modal_text privacy-modal-text-margin'>
+              <p className='user-select'>
                 "Medical information" is any information, data, or documentation
                 relating to a user's mental or physical condition. It includes
                 but is not limited to oral, written, or digital information
@@ -408,12 +409,12 @@ function Privacy() {
               </p>
             </div>
 
-            <div className="collection_of_data privacy-modal-text-margin">
-              <h4 className="user-select">6.3 Personal Account Information</h4>
+            <div className='collection_of_data privacy-modal-text-margin'>
+              <h4 className='user-select'>6.3 Personal Account Information</h4>
             </div>
 
-            <div className="privacy_modal_text privacy-modal-text-margin">
-              <p className="user-select">
+            <div className='privacy_modal_text privacy-modal-text-margin'>
+              <p className='user-select'>
                 Transacting over the internet has inherent risks which can only
                 be avoided by following security practices yourself. That’s why
                 we caution and advise you not to reveal any information to any
@@ -433,14 +434,14 @@ function Privacy() {
               </p>
             </div>
 
-            <div className="collection_of_data">
-              <h4 className="user-select">
+            <div className='collection_of_data'>
+              <h4 className='user-select'>
                 7. CORRECTION AND UPGRADATION OF PATIENT’S INFORMATION
               </h4>
             </div>
 
-            <div className="privacy_modal_text">
-              <p className="user-select">
+            <div className='privacy_modal_text'>
+              <p className='user-select'>
                 You may have certain rights relating to your personal
                 information subject to local data protection law. We aim to
                 provide you with access to your personal information. If that
@@ -463,12 +464,12 @@ function Privacy() {
               </p>
             </div>
 
-            <div className="collection_of_data">
-              <h4 className="user-select">8. TRANSPARENCY AND CHOICES</h4>
+            <div className='collection_of_data'>
+              <h4 className='user-select'>8. TRANSPARENCY AND CHOICES</h4>
             </div>
 
-            <div className="privacy_modal_text">
-              <p className="user-select">
+            <div className='privacy_modal_text'>
+              <p className='user-select'>
                 People have different privacy concerns. Our goal is to be clear
                 about what information we collect so that you can make
                 meaningful choices about how it is used. For example, you can
@@ -476,19 +477,19 @@ function Privacy() {
             </div>
 
             <div>
-              <ul className="privacy_modal_text privacy-modal-list-text privacy-modal-text-margin">
-                <li className="user-select">
+              <ul className='privacy_modal_text privacy-modal-list-text privacy-modal-text-margin'>
+                <li className='user-select'>
                   Review and control certain types of information tied to your
                   account by using platform
                 </li>
-                <li className="user-select">
+                <li className='user-select'>
                   View and edit your preferences about the ads shown to you on
                   the platform such as which categories might interest you using
                   ads settings. You can also visit that page to opt-out of
                   certain platform advertising services
                 </li>
 
-                <li className="user-select">
+                <li className='user-select'>
                   You may also set your browser to block all cookies associated
                   with our services to indicate when a cookie is being set by
                   us. However, it is important to remember that many of our
@@ -498,26 +499,26 @@ function Privacy() {
               </ul>
             </div>
 
-            <div className="collection_of_data">
-              <h4 className="user-select">9. AGE LIMITS</h4>
+            <div className='collection_of_data'>
+              <h4 className='user-select'>9. AGE LIMITS</h4>
             </div>
 
-            <div className="privacy_modal_text">
-              <p className="user-select">
+            <div className='privacy_modal_text'>
+              <p className='user-select'>
                 You are not allowed to use our services if you are under the age
                 of 18 and our services are not directed at children under the
                 age of 18.
               </p>
             </div>
 
-            <div className="collection_of_data">
-              <h4 className="user-select">
+            <div className='collection_of_data'>
+              <h4 className='user-select'>
                 10. COMPLIANCE WITH REGULATORY AUTHORITIES
               </h4>
             </div>
 
-            <div className="privacy_modal_text">
-              <p className="user-select">
+            <div className='privacy_modal_text'>
+              <p className='user-select'>
                 We regularly review our compliance with our policy. When we
                 receive any formal written complaints, we contact the person who
                 made the complaint to follow up. We work with the relevant
@@ -525,14 +526,14 @@ function Privacy() {
               </p>
             </div>
 
-            <div className="collection_of_data privacy-modal-text-margin">
-              <h4 className="user-select">
+            <div className='collection_of_data privacy-modal-text-margin'>
+              <h4 className='user-select'>
                 10.1 COPPA (Children Online Privacy Protection Act)
               </h4>
             </div>
 
-            <div className="privacy_modal_text privacy-modal-text-margin ">
-              <p className="user-select">
+            <div className='privacy_modal_text privacy-modal-text-margin '>
+              <p className='user-select'>
                 eShaafi strictly abides by the guidelines set by the Children's
                 Online Privacy Protection Act (COPPA) managed by the Federal
                 Trade Commission (FTC). Therefore, we do not intend to market
@@ -540,12 +541,12 @@ function Privacy() {
               </p>
             </div>
 
-            <div className="collection_of_data privacy-modal-text-margin">
-              <h4 className="user-select">10.2 Copyrights</h4>
+            <div className='collection_of_data privacy-modal-text-margin'>
+              <h4 className='user-select'>10.2 Copyrights</h4>
             </div>
 
-            <div className="privacy_modal_text privacy-modal-text-margin ">
-              <p className="user-select">
+            <div className='privacy_modal_text privacy-modal-text-margin '>
+              <p className='user-select'>
                 All the images, content, videos, layout, graphics, articles on
                 eShaafi.com, and the eShaafi mobile app is the sole property of
                 eShaafi. Therefore the unfair usage, or duplication of such
@@ -556,12 +557,12 @@ function Privacy() {
               </p>
             </div>
 
-            <div className="collection_of_data privacy-modal-text-margin">
-              <h4 className="user-select">10.3 Data Theft</h4>
+            <div className='collection_of_data privacy-modal-text-margin'>
+              <h4 className='user-select'>10.3 Data Theft</h4>
             </div>
 
-            <div className="privacy_modal_text privacy-modal-text-margin ">
-              <p className="user-select">
+            <div className='privacy_modal_text privacy-modal-text-margin '>
+              <p className='user-select'>
                 The data present on the eShaafi website and the eShaafi app
                 belongs exclusively to eShaafi and hence is not meant to be
                 unfairly used or collected by third parties. eShaafi reserves
@@ -571,24 +572,24 @@ function Privacy() {
               </p>
             </div>
 
-            <div className="collection_of_data">
-              <h4 className="user-select">11 YOUR RIGHTS AND OPTIONS</h4>
+            <div className='collection_of_data'>
+              <h4 className='user-select'>11 YOUR RIGHTS AND OPTIONS</h4>
             </div>
 
-            <div className="privacy_modal_text">
-              <p className="user-select">
+            <div className='privacy_modal_text'>
+              <p className='user-select'>
                 You have the right to correct/update your data, object to how we
                 use or share your data, and the right to restrict how we use or
                 share your data.
               </p>
             </div>
 
-            <div className="collection_of_data">
-              <h4 className="user-select">12 CHANGES IN OUR PRIVACY POLICY</h4>
+            <div className='collection_of_data'>
+              <h4 className='user-select'>12 CHANGES IN OUR PRIVACY POLICY</h4>
             </div>
 
-            <div className="privacy_modal_text">
-              <p className="user-select">
+            <div className='privacy_modal_text'>
+              <p className='user-select'>
                 Our policy is incorporated into the Terms and Conditions of the
                 platform and is subject to change from time to time without any
                 prior notice. In case of any significant changes, we may
@@ -601,8 +602,8 @@ function Privacy() {
               </p>
             </div>
 
-            <div className="privacy_modal_text">
-              <p className="user-select">
+            <div className='privacy_modal_text'>
+              <p className='user-select'>
                 <strong> Note: </strong>We will not ask you to share any
                 sensitive data or information via email or telephone. If you
                 receive any such request by email or phone, please do not
@@ -612,38 +613,38 @@ function Privacy() {
             </div>
           </Col>
         </Row>
-        <div className="terms-border-top">
-          {" "}
+        <div className='terms-border-top'>
+          {' '}
           <Row>
             <Col lg={6}>
-              <div className="col-lg-10 col-12 ">
-                <ul className="footer_bootom d-flex justify-content-between">
-                  <Link to="/terms" className="LINKS-MAIN-WRAPPER">
+              <div className='col-lg-10 col-12 '>
+                <ul className='footer_bootom d-flex justify-content-between'>
+                  <Link to='/terms' className='LINKS-MAIN-WRAPPER'>
                     <li>Terms & Conditions</li>
                   </Link>
 
-                  <Link to="/Privacy" className="LINKS-MAIN-WRAPPER">
+                  <Link to='/Privacy' className='LINKS-MAIN-WRAPPER'>
                     <li>Privacy Policy</li>
                   </Link>
-                  <Link to="/FAQ" className="LINKS-MAIN-WRAPPER">
+                  <Link to='/FAQ' className='LINKS-MAIN-WRAPPER'>
                     <li>FAQs</li>
                   </Link>
 
                   <li>
                     <a
-                      href="https://wa.me/923111088882"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="LINKS-MAIN-WRAPPER"
+                      href='https://wa.me/923111088882'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='LINKS-MAIN-WRAPPER'
                     >
-                      Help{" "}
+                      Help{' '}
                     </a>
                   </li>
                 </ul>
               </div>
             </Col>
             <Col lg={6}>
-              <div className="d-flex justify-content-md-end justify-content-center">
+              <div className='d-flex justify-content-md-end justify-content-center'>
                 <p>Copyright © 2022 • eShaafi.com</p>
               </div>
             </Col>
@@ -651,7 +652,7 @@ function Privacy() {
         </div>
       </Container>
     </div>
-  );
+  )
 }
 
 export default Privacy;
